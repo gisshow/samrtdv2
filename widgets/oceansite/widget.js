@@ -498,7 +498,7 @@ mars3d.widget.bindClass(mars3d.widget.BaseWidget.extend({
 
         // $.ajax({
         //     type: "GET",
-        //     url: "/visualization/data/ocean/tide_forecast.csv",
+        //     url: "/data/ocean/tide_forecast.csv",
         //     dataType: "text",
         //     success: function(data) {
         //         var allTextLines = data.split(/\r\n|\n/);
@@ -636,7 +636,7 @@ mars3d.widget.bindClass(mars3d.widget.BaseWidget.extend({
                this.timePause=false;
         $.ajax({
             type: "GET",
-            url: "/visualization/data/ocean/tidepoint.csv",
+            url: "/data/ocean/tidepoint.csv",
             dataType: "text",
             success: function(data) {
                 var allTextLines = data.split(/\r\n|\n/);

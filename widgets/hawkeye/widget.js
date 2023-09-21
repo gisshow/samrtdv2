@@ -71,7 +71,7 @@ mars3d.widget.bindClass(
 
       // L.tileLayer('http://mt1.google.cn/vt/lyrs=s&hl=zh-CN&x={x}&y={y}&z={z}&s=Gali', {}).addTo(this.map);
 
-      //   L.tileLayer('/visualization/data/arcgis/satellite/{z}/{x}/{y}.jpg', {
+      //   L.tileLayer('/data/arcgis/satellite/{z}/{x}/{y}.jpg', {
       //     maxZoom: 20,
       //     tileSize: 256,
       //     subdomains: ['0', '1', '2', '3', '4', '5', '6', '7'],
