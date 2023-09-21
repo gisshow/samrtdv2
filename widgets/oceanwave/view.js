@@ -1,0 +1,131 @@
+﻿var thisWidget;
+
+
+
+var isduan=false;
+
+//当前页面业务
+function initWidgetView(_thisWidget) {
+    thisWidget = _thisWidget;
+
+
+
+   $("input[name=maptype]").change(function () {
+       var val=$(this).val();
+      if(val==2){
+
+          $("#showcontour").show();
+          thisWidget.showHeatMap();
+      }else{
+          $("#showcontourcheck").prop("checked",false);
+          $("#showcontour").hide();
+          thisWidget.showPoints();
+      }
+   })
+
+    $("#showcontourcheck").change(function () {
+        var check=$(this).is(':checked')
+
+       if(check) {
+           thisWidget.showContourLine();
+       }else{
+           thisWidget.hideContourLine();
+       }
+    })
+
+
+
+    $("#endtimediv").hide();
+    $("#datetext2").val('')
+
+    $("input[name=timetype]").change(function () {
+        var val=$(this).val();
+
+        if(val==2){
+            isduan=true;
+            $("#endtimediv").show();
+            $("#datetext2").val('2020-12-06T08:00:00')
+
+        }else{
+            isduan=false;
+            $("#endtimediv").hide();
+            $("#datetext2").val('')
+
+        }
+    })
+
+    $("input[type=datetime-local]").change(function (v,b) {
+
+
+        var val=$(this).val();
+        var min=$(this).attr("min")
+        var max=$(this).attr("max");
+
+        var date=new Date(val);
+
+
+        var datemin=new Date(min);
+        var datemax=new Date(max);
+        if(date<datemin){
+            $(this).val(min);
+        }
+
+        if(date>datemax){
+            $(this).val(max);
+        }
+        
+        var datastr1=$("#datetext").val();
+        var datastr2=$("#datetext2").val();
+
+        var date1=new Date(datastr1);
+        var date2=new Date(datastr2);
+
+        if(date1>date2){
+            toastr.info('时间选择错误');
+            $("#datetext2").val(datastr1)
+        }
+    });
+
+    $("#query").click(function () {
+         thisWidget.loadData();
+    })
+}
+/*
+ 更新数据
+ */
+
+
+/***
+ *  点击更改样式
+ */
+$(".dark>a").click(function() {
+    $(this).css("color", "#fada34");
+})
+
+
+
+function getTimeConfig() {
+    var sd=$("#datetext").val();
+    var sh=$("#datehour").val();
+    var ed=$("#datetext2").val()
+    var eh=$("#datehour2").val()
+
+    var date=new Date(sd);
+    var date2=new Date(ed);
+
+
+    sd=date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate();
+    sh=date.getHours();
+    if(isduan&&date<date2){
+        ed = date2.getFullYear() + "-" + (date2.getMonth() + 1) + "-" + date2.getDate();
+        eh = date2.getHours();
+    }else{
+        ed=null;
+        eh=null;
+    }
+
+
+
+    return {sd,ed,sh,eh}
+
+}

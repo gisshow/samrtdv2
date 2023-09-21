@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html class="no-js css-menubar" lang="zh-cn">
+
+<head>
+    <title>弹窗子页面</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 移动设备 viewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="author" content="火星科技 http://cesium.marsgis.cn ">
+    <!-- 360浏览器默认使用Webkit内核 -->
+    <meta name="renderer" content="webkit">
+    <!-- Chrome浏览器添加桌面快捷方式（安卓） -->
+    <link rel="icon" type="image/png" href="../../img/favicon/favicon.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Safari浏览器添加到主屏幕（IOS） -->
+    <link rel="icon" sizes="192x192" href="img/favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="火星科技MarsGIS">
+    <!-- Win8标题栏及ICON图标 -->
+    <link rel="apple-touch-icon-precomposed" href="../../img/favicon/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="../../img/favicon/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#62a8ea">
+
+    <!-- 第3方lib引入 -->
+    <script type="text/javascript" src="../../lib/include-lib.js?time=20190418" libpath="../../lib/" include="jquery,echarts,font-awesome,bootstrap,admui-frame"></script>
+
+  <link href="../../sdk/third/css/widget-win.css" rel="stylesheet" />
+    <link href="view.css?time=20190418" rel="stylesheet" />
+    <link href="../../iconfont/iconfont.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div  style="position: absolute;left :5px;top:30px;width: 280px;height: 30px;" >
+
+            <span  style="margin-left: 8px;color: white;"  id="zhandianname">    </span>
+            <span  style="float: right;margin-right: 20px;white;"  id="alarmtime">  </span>
+        </div>
+
+
+
+
+        <div id="echartdiv" style="position: absolute;left :5px;top:60px;width: 280px;height: 180px;"   >
+
+        </div>
+
+
+    </div>
+
+
+    <!--页面js-->
+    <script src="view.js?time=20190418"></script>
+</body>
+
+<script type="text/javascript">
+
+
+
+    var thisWidget;
+
+    var myChart;
+
+    //当前页面业务
+    function initWidgetView(_thisWidget) {
+        thisWidget = _thisWidget;
+          myChart = echarts.init(document.getElementById('echartdiv'));
+      //  this.loadcharts();
+    }
+    function loadcharts(data,alarmData,alarmColor) {
+
+
+        var alarmtype='蓝色预警';
+        var color=alarmColor[0];
+        var alarmvalue=alarmData[0];
+        if(data.v>alarmData[3]){
+            alarmtype='红色预警';
+              color=alarmColor[3];
+            alarmvalue=alarmData[3];
+        }else if(data.v>alarmData[2]){
+            alarmtype='橙色预警';
+            color=alarmColor[2];
+            alarmvalue=alarmData[2];
+        }else if(data.v>alarmData[1]){
+            alarmtype='黄色预警';
+            color=alarmColor[1];
+            alarmvalue=alarmData[1];
+        }else{
+            alarmtype='蓝色预警';
+            color=alarmColor[0];
+            alarmvalue=alarmData[0];
+        }
+
+
+        $("#zhandianname").html("站点"+data.id+" "+alarmtype);
+        $("#alarmtime").html(data.time);
+
+        var v=data.v;
+
+        var d=[];
+        var sd=[];
+        var ed=[];
+        for(var i=0;i<6;i++){
+            d.push(v);
+            sd.push(alarmvalue);
+            ed.push(1);
+        }
+
+
+
+        var j=(alarmvalue-data.v).toFixed(2);
+
+        var v="距离未超过警戒线水位";
+        if(j<0){
+            j=-j;
+            v="距离超过警戒线水位";
+        }
+
+
+        var option = {
+            title: {
+                textStyle:{
+                    color:'white',
+                    fontSize:14,
+                },
+                text: v,
+                subtext:'超过警戒线水位 '+j+'M',
+                left: 'center'
+            } ,
+            xAxis: {
+                type: 'category',
+                splitLine: {
+                    show: false
+                },
+                axisLine: {
+                    show: true,
+                    lineStyle: {
+                        width: 1
+                    }
+                },
+                axisTick: {
+                    show: false
+
+                },
+                axisLabel: {
+                    show:false
+                },
+                data: ["1", "2", "3", "4", "5", "6"]
+            },
+            grid: {
+                left: '2%',
+                right: '4%',
+                bottom: '4%',
+                containLabel: true
+            },
+
+            yAxis: {
+                type: 'value',
+
+
+                min:0,
+                interval:25,
+                splitLine: {
+                    show: false
+                },
+                axisLine: {
+
+                },
+                axisTick: {
+                    show:false,
+                },
+                axisLabel: {
+                    fontWeight: "bold",
+                    textStyle:{
+                        color:'blue',
+                        fontSize:14,
+                    },
+                    formatter:function (a,b) {
+                        if(a==100){
+                            return "237cm"
+                        }else{
+                            return "";
+                        }
+                    }
+                }
+            },
+            series: [{
+                type: 'line',
+
+                showSymbol: false,
+                data: sd,
+                markPoint: {
+                    symbolSize:1,
+                    label: {
+
+                        normal: {
+                            offset:[100,-10],
+                            textStyle: {
+                                color: '#fff'
+                            },
+                            formatter:function (a,b) {
+                                return alarmtype+(alarmvalue).toFixed(2)+"cm"
+                            }
+                        }
+
+                    },
+                    data: [{
+                        type: 'max',
+                        name: '最大值',
+
+                    }]
+                },
+                stack: 'all',
+                lineStyle:{
+                    width:1,
+                    color:color
+                }
+            },{
+                type: 'line',
+
+                showSymbol: false,
+                data: ed,
+                stack: 'all',
+                areaStyle:{
+                    color:color,
+                },
+                lineStyle:{
+                    color:color,
+                    width:1,
+                }
+            },{
+                type: 'line',
+                smooth: true,
+                data: d,
+                areaStyle: {
+                    normal: {
+                        color:  'rgba(31, 222, 225, .6)'
+                    }
+                },
+                lineStyle:{
+                    width:0,
+                },
+                symbolSize:0,
+                markPoint: {
+                    symbolSize:1,
+                    label: {
+
+                        normal: {
+                            offset:[100,20],
+                            textStyle: {
+                                color: '#fff'
+                            },
+                            formatter:function (a,b) {
+                                return "浪高："+(a.value).toFixed(2)+"cm"
+                            }
+                        }
+
+                    },
+                    data: [{
+                        type: 'max',
+                        name: '最大值',
+
+                    }]
+                },
+                markLine: {
+                    symbolSize:0,
+                    lineStyle:{
+                        type:'solid',
+                        color:color
+                    },
+                    label:{
+                        show:false,
+                    },
+                    data: [{
+                        yAxis: 100
+                    }]
+                }
+            }]
+        };
+
+
+        myChart.setOption(option);
+
+        setTimeout(resize,300)
+
+    }
+
+    function resize() {
+           myChart.resize();
+    }
+
+
+
+</script>
+
+</html>

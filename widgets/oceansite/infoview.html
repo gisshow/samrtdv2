@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html class="no-js css-menubar" lang="zh-cn">
+
+<head>
+    <title>弹窗子页面</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 移动设备 viewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="author" content="火星科技 http://cesium.marsgis.cn ">
+    <!-- 360浏览器默认使用Webkit内核 -->
+    <meta name="renderer" content="webkit">
+    <!-- Chrome浏览器添加桌面快捷方式（安卓） -->
+    <link rel="icon" type="image/png" href="../../img/favicon/favicon.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Safari浏览器添加到主屏幕（IOS） -->
+    <link rel="icon" sizes="192x192" href="img/favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="火星科技MarsGIS">
+    <!-- Win8标题栏及ICON图标 -->
+    <link rel="apple-touch-icon-precomposed" href="../../img/favicon/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="../../img/favicon/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#62a8ea">
+
+    <!-- 第3方lib引入 -->
+    <script type="text/javascript" src="../../lib/include-lib.js?time=20190418" libpath="../../lib/" include="jquery,echarts,font-awesome,bootstrap,admui-frame"></script>
+
+    <link href="../../sdk/third/css/widget-win.css" rel="stylesheet" />
+    <link href="view.css?time=20190418" rel="stylesheet" />
+    <link href="../../iconfont/iconfont.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div class="container">
+
+    <div>
+
+        <div  style="padding: 10px; color: white; font-family: PingFangSC-Regular;
+        font-size: 18px;
+        color: #E0E9F6;"  id="zhandianname">    </div>
+        <div  style="color: white;"  id="alarmtime1">
+          <div style="width: 100%;
+          min-width: 20px;
+          line-height: 40px;
+          height: 40px;
+          font-size: 38px;
+          padding: 0 10px;
+          color: #8EE0F8;">
+            <span style="float: left;" id="dg">
+              
+            </span>
+            <span style="float: right;" id="zs">
+              
+            </span>
+          </div>
+          <div style="padding: 0 10px;font-family: PingFangSC-Regular;
+          font-size: 14px;
+          color: #979FB0;width: 100%;">
+            <span style="float: left;">堤高(m)</span>
+            <span style="float: right;">当前总水(cm)</span>
+          </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="echartdiv2" style="position: absolute;left :5px;top:100px;width: 340px;height: 333px;"   >
+
+    </div>
+
+
+</div>
+
+
+<!--页面js-->
+<script src="view.js?time=20190418"></script>
+</body>
+
+<script type="text/javascript">
+
+
+
+  var thisWidget;
+
+  var myChart;
+
+  //当前页面业务
+  function initWidgetView(_thisWidget) {
+    thisWidget = _thisWidget;
+    myChart = echarts.init(document.getElementById('echartdiv2'));
+    //  this.loadcharts();
+  }
+  function loadcharts(data,info,alarmdata,dates,index) {
+
+    $("#zhandianname").html("站点统计信息");
+    $("#dg").html(data.hei)
+    $("#zs").html(data.zss[index])
+
+    var twd=[];
+    var time=[];
+
+    var zs=[];
+    var hd=[];
+    var yd=[];
+    var od=[];
+    var rd=[];
+    var ad=[];
+    for(var i=0;i<dates.length;i++){
+      zs.push(50);
+      time.push((i+1));
+      hd.push(alarmdata[0]);
+
+      yd.push(alarmdata[1]-alarmdata[0]);
+      od.push(alarmdata[2]-alarmdata[1]);
+      rd.push(alarmdata[3]-alarmdata[2]);
+      ad.push(20);
+      twd.push(data.zss[i]-data.zs[i]);
+    }
+
+
+
+
+
+    var colors=[ '#ec4040', '#c67d0c','#c9cb0e','#317ddd'].reverse();
+
+
+    var option = {
+      title: [{
+        textStyle:{
+          color:'white',
+          fontSize:12,
+        },
+        text: '', //data.time,
+        left: '10'
+      }] ,
+      tooltip: {
+        trigger: 'axis',
+        formatter:function (a,b) {
+          var s1=a[a.length-1];
+          var s2=a[a.length-2];
+          var s3=a[a.length-3];
+          var time=s1.axisValue;
+          var value1=s1.value;
+          var value2=s2.value;
+          var value3=s3.value;
+          return time+":00:00<br/> 总水: "+value3.toFixed(2)+"cm"+"<br/> 增水: "+value2.toFixed(2)+"cm"+"<br/> 天文潮: "+value1.toFixed(2)+"cm";
+
+        }
+
+      },
+      color:[ '#ec4040', '#c67d0c','#c9cb0e','#317ddd'].reverse(),
+      legend: {
+        data: ['总水(cm)','增水(cm)','天文潮(cm)'],
+
+        textStyle: {
+          fontSize: 12,
+          color: colors[0],
+        },
+        top:'5',
+        left:'20'
+        // left : '50%'
+      },
+      xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        splitLine: {
+          show: false
+        },
+
+        axisLine: {
+          show: true,
+          onZero:false,
+          lineStyle: {
+            color:'blue',
+            width: 1
+          }
+        },
+        axisTick: {
+          show: true
+
+        },
+        axisLabel: {
+          textStyle:{
+            color:'white',
+            fontSize:10,
+          },
+          rotate:40,
+          showMaxLabel: true,
+          show:true
+        },
+        data: dates
+      },
+      grid: {
+        left: '60',
+        right: '20',
+        bottom: '20',
+        containLabel: true
+      },
+
+      yAxis: {
+        type: 'value',
+
+        name:'潮位(cm)',
+        nameTextStyle:{
+          color:'white',
+        },
+        splitLine: {
+          show: false
+        },
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color:'blue',
+            width: 1
+          }
+        },
+        axisTick: {
+          show:true,
+        },
+        axisLabel: {
+          show:false,
+          fontWeight: "bold",
+          textStyle:{
+            color:'white',
+            fontSize:14,
+          }
+        }
+      },
+      series: [{
+        type: 'line',
+        name:'增水警戒线',
+        showSymbol: false,
+        data: zs,
+        stack: 'all112',
+        lineStyle:{
+          width:2,
+          type:'dotted',
+          color:'gray'
+        },
+        markPoint: {
+          symbolSize:1,
+          label: {
+            normal: {
+              offset:[-30,0],
+              textStyle: {
+                fontSize:8,
+                color: 'gray'
+              },
+              formatter:function (a,b) {
+                return "增水 50"
+              }
+            }
+
+          },
+          data: [{
+            type: 'max',
+            name: '最大值',
+
+          }]
+        }
+      },{
+        type: 'line',
+        name:'蓝',
+        showSymbol: false,
+        data: hd,
+        stack: 'all',
+        lineStyle:{
+          width:1,
+          color:colors[0]
+        },markPoint: {
+          symbolSize:1,
+          label: {
+
+            normal: {
+              textStyle: {
+                fontSize:8,
+                color:colors[0],
+              },
+              offset:[-30,5],
+              formatter:function (a,b) {
+                return "蓝 "+alarmdata[0]
+              }
+            }
+
+          },
+          data: [{
+            type: 'max',
+            name: '最大值',
+
+          }]
+        }
+      },{
+
+        type: 'line',
+        stack: 'all',
+        name:'黄',
+        data: yd,
+        areaStyle:{
+          color:colors[0],
+        },
+        showSymbol: false,
+        lineStyle:{
+          color:colors[1],
+          width:1,
+        },markPoint: {
+          symbolSize:1,
+          label: {
+            normal: {
+              offset:[-30,-80],
+              textStyle: {
+                fontSize:8,
+                color:colors[1]
+              },
+              formatter:function (a,b) {
+                return "黄 "+alarmdata[1]
+              }
+            }
+
+          },
+          data: [{
+            type: 'max',
+            name: '最大值',
+
+          }]
+        }
+      },{
+        type: 'line',
+        name:'橙',
+        stack: 'all',
+        data: od,
+        showSymbol: false,
+        areaStyle:{
+          color:colors[1],
+        },
+
+        lineStyle:{
+          color:colors[2],
+          width:1,
+        },markPoint: {
+          symbolSize:1,
+          label: {
+
+            normal: {
+              offset:[-30,-90],
+              textStyle: {
+                fontSize:8,
+                color:colors[2]
+              },
+              formatter:function (a,b) {
+
+                return "橙 "+alarmdata[2]
+              }
+            }
+
+          },
+          data: [{
+            type: 'max',
+            name: '最大值',
+
+          }]
+        }
+      },{
+        type: 'line',
+        stack: 'all',
+        name:'红',
+        showSymbol: false,
+        data: rd,
+        areaStyle:{
+          color:colors[2],
+        },
+
+        lineStyle:{
+          color:colors[3],
+          width:1,
+        },markPoint: {
+          symbolSize:1,
+          label: {
+
+            normal: {
+              offset:[-30,-100],
+              textStyle: {
+                fontSize:8,
+                color:colors[3]
+              },
+              formatter:function (a,b) {
+
+                return "红 "+alarmdata[3]
+              }
+            }
+
+          },
+          data: [{
+            type: 'max',
+            name: '最大值',
+
+          }]
+        }
+      },{
+        type: 'line',
+        stack: 'all',
+
+        data: ad,
+        showSymbol: false,
+        areaStyle:{
+          color:colors[3],
+        },
+
+        lineStyle:{
+          width:0,
+        }
+      },{
+        type: 'line',
+        name:'总水(cm)',
+        data: data.zss,
+        symbolSize: 3,
+        lineStyle:{
+          width:1,
+          color:'#65aaf1'
+        }
+      },{
+        type: 'line',
+        name:'增水(cm)',
+        data: data.zs,
+        symbolSize: 3,
+        lineStyle:{
+          width:1,
+          type:'dotted',
+          color:'#02ef9f'
+        }
+      },{
+        type: 'line',
+        name:'天文潮(cm)',
+        data: twd,
+        symbolSize: 3,
+        lineStyle:{
+          width:1,
+          color:'orange'
+        }
+      }]
+    };
+
+
+    myChart.setOption(option);
+
+  }
+
+
+
+</script>
+
+</html>

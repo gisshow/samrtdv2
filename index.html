@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" href="/visualization/umi.13145476.css"><meta charset="utf-8"><!-- 不缓存 --><meta http-equiv="Expires" content="0"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Cache-control" content="no-cache"><meta http-equiv="Cache" content="no-cache"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><link href="/visualization/Cesium/Widgets/widgets.css" rel="stylesheet"><link href="/visualization/Mars/mars3d-src.css" rel="stylesheet"><link href="/visualization/CesiumPlugins/navigation/viewerCesiumNavigationMixin.css" rel="stylesheet"><link href="/visualization/sdk/third/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="/visualization/sdk/third/css/essentials.css" rel="stylesheet"><link href="/visualization/sdk/third/css/layout-dark.css" rel="stylesheet"><link href="/visualization/sdk/third/css/jquery-ui-1.10.4.custom.css" rel="stylesheet"><link href="/visualization/sdk/third/css/style.css" rel="stylesheet"><link href="/visualization/lib/pop/main.css" rel="stylesheet"><script>var userAgent = navigator.userAgent
+      console.log(navigator);
+      if ((userAgent.indexOf('Chrome') === -1 || userAgent.indexOf('Edge') > -1) && userAgent.indexOf('Firefox') === -1) {
+        location.href = '/sdk/download/'
+      }</script><title></title><script>window.routerBase = "visualization";</script></head><body class="dark"><div id="root"></div><div id="modal-root"></div><script src="/visualization/lib/video/kurento-utils.js"></script><script src="/visualization/lib/turf/turf.js"></script><script src="/visualization/Cesium/Cesium.js"></script><script src="/visualization/CesiumPlugins/gltf/fixGltf.js"></script><script src="/visualization/CesiumPlugins/navigation/viewerCesiumNavigationMixin.js"></script><script src="/visualization/JQuery/jquery-3.4.1.min.js"></script><script src="/visualization/Mars/mars3d-src.js"></script><!-- <script src="/visualization/Mars/heatmap.js"></script>
+  <script src="/visualization/Mars/mars3d-heatmap.js"></script> --><!-- 热力图依赖 --><script src="/visualization/CesiumPlugins/heatmap/heatmap.min.js"></script><script src="/visualization/CesiumPlugins/heatmap/HeatmapImageryProvider.js"></script><script src="/visualization/CesiumPlugins/heatmap/CesiumHeatmap.js"></script><!-- cesium扩展插件 --><!-- <script src="/visualization/CesiumPlugins/pinganCesium.min.js"></script> --><!-- 压平 --><script src="/visualization/CesiumPlugins/Cesium.PolygonTexture.min.js"></script><!-- <script src="/visualization/Mars/mars3d-src.js"></script> --><script type="text/javascript" src="/visualization/lib/include-lib.js" libpath="/visualization/lib/" include="font-awesome,web-icons,layer,haoutil,nprogress,toastr,turf,echarts,vtgl"></script><script src="/visualization/lib/pop/main.js"></script><script>window.publicPath = "/visualization/";
+    window.NProgress=NProgress
+    window.echarts=echarts
+    window.vtgl=vtgl;
+    console.log( window.vtgl)
+
+    // if ('serviceWorker' in navigator) {
+    //   if(location.hostname.indexOf("localhost")===-1 || localStorage.useWorkBox){
+    //     window.addEventListener('load', () => {
+    //       navigator.serviceWorker.register('./sw.js')
+    //               .then(registration => {
+    //                 console.log(`Service Worker registered! Scope: ${registration.scope}`);
+    //               })
+    //               .catch(err => {
+    //                 console.log(`Service Worker registration failed: ${err}`);
+    //               });
+    //     });
+    //   }else{
+    //     navigator.serviceWorker.getRegistration().then(a=>{
+    //       if (a) {
+    //         a.unregister()
+    //       }
+    //     })
+    //   }
+    // }</script><div id="loading"></div><style>#loading {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: fixed;
+      /*display: block;*/
+      opacity: 0.7;
+      background-color: #fff;
+      z-index: 99999999999;
+      text-align: center;
+      display: none;
+    }
+
+    #loading-image {
+      position: absolute;
+      top: 30%;
+      left: 30%;
+      z-index: 100;
+    }
+
+    .cesium-performanceDisplay-defaultContainer {
+      display: none;
+    }</style><script src="/visualization/umi.d900237d.js"></script></body></html>
