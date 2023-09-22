@@ -1,0 +1,92 @@
+{
+  "code": 0,
+  "data": [
+    {
+        "name": "建筑19",
+        "id": 1,
+        "dataFormatDesc": "3dtiles",
+        "url": "/lg3dtiles/Timelines_103_QM/5jz_19Y_1517_webp/tileset.json"
+    },
+    {
+      "name": "建筑20",
+      "id": 2,
+      "dataFormatDesc": "3dtiles",
+      "url": "/lg3dtiles/Timelines_103_QM/5jz_20Y_1517_webp/tileset.json"
+    },
+    {
+      "name": "建筑21",
+      "id": 3,
+      "dataFormatDesc": "3dtiles",
+      "url": "/lg3dtiles/Timelines_103_QM/5jz_21Y_1517_webp/tileset.json"
+    },
+    {
+      "name": "建筑22",
+      "id": 4,
+      "dataFormatDesc": "3dtiles",
+      "url": "/lg3dtiles/Timelines_103_QM/5jz_22Ygh_1517_webp/tileset.json"
+    },
+    {
+      "name": "创新晶体",
+      "id": 5,
+      "dataFormatDesc": "3dtiles",
+      "url": "/lg3dtiles/Timelines_103_QM/1cxjt_19Y_1517_webp/tileset.json"
+    },
+    {
+      "name": "海立方",
+      "id": 6,
+      "dataFormatDesc": "3dtiles",
+      "url": "/lg3dtiles/Timelines_103_QM/3hlf_20Y_1517_webp/tileset.json"
+    },
+    {
+      "name": "影像1",
+      "id": 11,
+      "dataFormatDesc": "arcgis-mapserver-ext",
+      "url": "/geoserver/rest/services/LG/LG_1930_White_TILE/MapServer",
+      "rectangle": [
+              -1.28545554503882,
+              -0.712598698522388,
+              1.31976460772973,
+              1.04652856675242
+            ]
+    },
+    
+    {
+      "name": "影像2",
+      "id": 12,
+      "dataFormatDesc": "arcgis-mapserver",
+      "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "rectangle": [
+              -179.999995508415,
+              -85.0511287798149,
+              179.999995508415,
+              85.0511287798149
+            ]
+          },
+    {
+      "name": "影像3",
+      "id": 13,
+      "dataFormatDesc": "arcgis-mapserver-ext",
+      "url": "/geoserver/rest/services/LG/HX2021_HP_TILE/MapServer",
+      "rectangle": [
+              -1.28545554503882,
+              -0.712598698522388,
+              1.31976460772973,
+              1.04652856675242
+            ]
+    },
+    {
+      "name": "影像4",
+      "id": 14,
+      "dataFormatDesc": "arcgis-mapserver-ext",
+      "url": "/geoserver/rest/services/LG/HX2022_HP_TILE/MapServer",
+      "rectangle": [
+              -1.28545554503882,
+              -0.712598698522388,
+              1.31976460772973,
+              1.04652856675242
+            ]
+    }
+  ],
+  "msg": "success",
+  "success": true
+}

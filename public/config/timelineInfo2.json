@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "data":
+    {
+        "id":1,
+        "name":"影像时序1",
+        "node":[
+          {
+            "id":1,
+            "layers":[{"id":11,"name":"影像1"}],
+            "name":"node1"
+          },
+          {
+              "id":2,
+              "layers":[{"id":12,"name":"影像2"}],
+              "name":"node2"
+          },
+          {
+            "id":3,
+            "layers":[{"id":13,"name":"影像3"}],
+            "name":"node3"
+          },
+          {
+            "id":4,
+            "layers":[{"id":14,"name":"影像4"}],
+            "name":"node4"
+          }
+        ]
+    },
+
+  "msg": "success",
+  "success": true
+}

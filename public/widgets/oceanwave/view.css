@@ -1,0 +1,152 @@
+.rowdiv {
+    margin: 0px;
+    display: inline-block;
+    width: 100%;
+}
+
+.rowdiv>label{
+    margin-right: 25px;
+}
+
+.rowul {
+    margin-left: 0px;
+    display: inline-block;
+}
+
+.rowul2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rowul li {
+    margin-left: 4px;
+    display: inline-block;
+}
+
+.rowul2 li {
+    margin-right: 5px;
+}
+
+.rowhide {
+    display: none;
+}
+
+.chartdiv {
+    top: -1000px;
+    left: -1000px;
+    width: 57px;
+    height: 157px;
+    background: transparent;
+    border-radius: 4px;
+    position: absolute;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: none;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: mymove;
+}
+
+.timeline {
+    position: absolute;
+    left: -8px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.reset {
+    color: #0B92ED !important;
+}
+
+#querycondition ul li {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.transpanceclass{
+    background-color: transparent;
+    border: 0px transparent solid;
+}
+
+.spnaclass2{
+    margin: 0px;
+    padding: 0px;
+    width: 120px;
+    height: 38px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #979FB0;
+    background: #26354F;
+    border:0px solid #414B64;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.spnaclass2:hover{
+    background: #181E38;
+    border: 1px solid #414B64;
+}
+
+
+.selectbtn2{
+    background: #181E38;
+    border: 1px solid #414B64;
+}
+
+.fontclass{
+    margin-left: 10px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #979FB0;
+}
+
+.divbackground{
+    background: #181E38;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+/* 12.17 */
+.wave-pophtml{
+    width: 200px;
+}
+.wave-pop-row:first-child{
+    margin-top: 30px;
+}
+.wave-pop-row{
+    min-height:20px;
+    margin-bottom:10px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #979FB0;
+}
+
+.wave-pop-row span:first-child{
+    float: left;
+}
+
+.wave-pop-row span:last-child{
+    float:right
+}
+
+.wave-pop-row .wave-btn{
+    cursor: pointer;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background-color: #526069;
+    font-family:'PingFangSC-Regular';
+    font-size:14px;
+    color: #E0E9F6;
+}

@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<html class="no-js css-menubar" lang="zh-cn">
+
+<head>
+    <title>弹窗子页面</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 移动设备 viewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="author" content="火星科技 http://cesium.marsgis.cn ">
+    <!-- 360浏览器默认使用Webkit内核 -->
+    <meta name="renderer" content="webkit">
+    <!-- Chrome浏览器添加桌面快捷方式（安卓） -->
+    <link rel="icon" type="image/png" href="../../img/favicon/favicon.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Safari浏览器添加到主屏幕（IOS） -->
+    <link rel="icon" sizes="192x192" href="img/favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="火星科技MarsGIS">
+    <!-- Win8标题栏及ICON图标 -->
+    <link rel="apple-touch-icon-precomposed" href="../../img/favicon/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="../../img/favicon/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#62a8ea">
+
+    <!-- 第3方lib引入 -->
+    <script type="text/javascript" src="../../lib/include-lib.js?time=20190418" libpath="../../lib/" include="jquery,echarts,font-awesome,bootstrap,admui-frame"></script>
+
+    <link href="../../sdk/third/css/widget-win.css" rel="stylesheet" />
+    <link href="view.css?time=20190418" rel="stylesheet" />
+    <link href="../../iconfont/iconfont.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div  style="position: absolute;left :5px;top:30px;width: 280px;height: 30px;" >
+
+            <span  style="margin-left: 8px; color: white;"  id="zhandianname">    </span>
+            <span  style="float: right;margin-right: 20px; color: white;"  id="alarmtime">  </span>
+        </div>
+
+
+
+
+        <div id="echartdiv" style="position: absolute;left :5px;top:60px;width: 280px;height: 190px; background-image: url('../../img/bgcolor1.png');"   >
+
+        </div>
+
+
+    </div>
+
+
+    <!--页面js-->
+    <script src="view.js?time=20190418"></script>
+</body>
+
+<script type="text/javascript">
+
+
+
+    var thisWidget;
+
+    var myChart;
+
+    //当前页面业务
+    function initWidgetView(_thisWidget) {
+        thisWidget = _thisWidget;
+          myChart = echarts.init(document.getElementById('echartdiv'));
+      //  this.loadcharts();
+    }
+    function loadcharts(data,info,timeInd,alarmType,alarmdata) {
+
+        var l=10;
+
+
+        var colors=[ '#ec4040', '#c67d0c','#c9cb0e','#317ddd'].reverse()
+
+        var zsalarm=0;
+        var zstext='';
+        var cz=0;
+
+        if(l>=10){
+            l=l-10;
+            zsalarm=1;
+            zstext='增水预警'
+
+        }
+
+        var alarm=false;
+        if(l>0){
+            alarm=true;
+        }
+        var max=50;
+        var color=colors[0]
+        var level='';
+
+
+            if(l==1){
+                  max=alarmdata[0];
+                  color=colors[0]
+                  level='蓝色预警';
+            }else   if (l == 2) {
+                max = alarmdata[1];
+                color = colors[1]
+                level = '黄色预警';
+            } else if (l == 3) {
+                max = alarmdata[2];
+                color = colors[2]
+                level = '橙色预警';
+            } else if (l == 4) {
+                max = alarmdata[3];
+                color = colors[3]
+                level = '红色预警';
+            }
+
+
+
+
+        $("#zhandianname").html("站点"+data.id+level+" "+zstext);
+        $("#alarmtime").html(info.ad+" "+data.t);
+
+        var zs=data.zss[data.t];
+
+        var zjs=data.zs[data.t];
+
+        var d=[];
+
+        var asd=[];
+        var aed=[];
+
+        var zsss=[];
+        var zsv=[];
+
+        max = 50;
+
+        for(var i=0;i<7;i++){
+            d.push(zjs);
+            asd.push(max);
+            aed.push(100);
+
+            zsss.push(50);
+            zsv.push(zs);
+        }
+
+
+
+        var v="当前"+(alarm?'总水':'增水')+"超过警戒线"+(alarm?(zs-max):(zjs-50))+"cm";
+
+
+        var option = {
+            title: {
+                textStyle:{
+                    color:'white',
+                    fontSize:14,
+                },
+                text: v,
+                left: 'center'
+            } ,
+            xAxis: [{
+                type: 'category',
+                splitLine: {
+                    show: false
+                },
+                boundaryGap: false,
+                axisLine: {
+                    show: true,
+                    lineStyle: {
+                        width: 1
+                    }
+                },
+                axisTick: {
+                    show: false
+
+                },
+                axisLabel: {
+                    show:false
+                },
+                data: ["1", "2", "3", "4", "5", "6"]
+            },{
+                type: 'value',
+                splitLine: {
+                    show: false
+                },
+                boundaryGap: false,
+                axisLine: {
+                    show: false,
+                    lineStyle: {
+                        width: 1
+                    }
+                },
+                axisTick: {
+                    show: false
+
+                },
+                axisLabel: {
+                    show:false
+                }
+            }],
+            grid: {
+                left: '50',
+                right: '40',
+                bottom: '4%',
+                containLabel: true
+            },
+
+            yAxis: [{
+                type: 'value',
+                interval:1,
+                splitLine: {
+                    show: false
+                },
+                axisLine: {
+
+                },
+                axisTick: {
+                    show:false,
+                },
+                axisLabel: {
+                    fontWeight: "bold",
+                    textStyle:{
+                        color:color,
+                        fontSize:14,
+                    },
+                    formatter:function (a,b) {
+
+                        if(a==max){
+                            return a+"cm";
+                        }else{
+                            return "";
+                        }
+                    }
+                }
+            },{
+                type: 'category',
+                interval:1,
+                name:'堤岸高程\n'+data.hei+"m",
+                nameTextStyle:{
+                    color:"white"
+                },
+                splitLine: {
+                    show: false
+                },
+                axisLine: {
+
+                },
+                axisTick: {
+                    show:false,
+                }
+            }],
+            series: [ ]
+        };
+
+
+            option.series.push({
+                type: 'line',
+
+                showSymbol: false,
+                data: asd,
+                stack: 'all',
+                markPoint: {
+                    symbolSize:1,
+                    label: {
+
+                        normal: {
+                            offset:[100,-10],
+                            textStyle: {
+                                color: '#fff'
+                            },
+                            formatter:function (a,b) {
+                                return level+(max).toFixed(2)+"cm"
+                            }
+                        }
+
+                    },
+                    data: [{
+                        type: 'max',
+                        name: '最大值',
+
+                    }]
+                },
+                lineStyle:{
+                    width:1,
+                    color:color
+                }
+            },{
+                type: 'line',
+
+                showSymbol: false,
+                data: aed,
+                stack: 'all',
+                areaStyle:{
+                    color:color,
+                },
+                lineStyle:{
+                    color:color,
+                    width:1,
+                }
+            },{
+                type: 'line',
+                smooth: true,
+                data: d,
+                areaStyle: {
+                    normal: {
+                        color:  'rgba(31, 222, 225, .6)'
+                    }
+                },
+                lineStyle:{
+                    width:0,
+                },
+                symbolSize:0,
+                markPoint: {
+                    symbolSize:1,
+                    label: {
+
+                        normal: {
+                            offset:[100,10],
+                            textStyle: {
+                                color: '#fff'
+                            },
+                            formatter:function (a,b) {
+                                return "增水水位："+(a.value).toFixed(0)+"cm"
+                            }
+                        }
+
+                    },
+                    data: [{
+                        type: 'max',
+                        name: '最大值',
+
+                    }]
+                }
+            })
+
+        myChart.setOption(option);
+
+    }
+
+
+
+</script>
+
+</html>
