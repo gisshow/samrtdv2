@@ -1,0 +1,23 @@
+.App {
+  /*text-align: center;*/
+}
+
+.anchor-link-body{
+  display: inline-block;
+  position: fixed;
+  right: 100px;
+  top: 100px;
+}
+
+.link-content{
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.link-content:hover{
+  color: #2196F3;
+}
+
+.activeLink{
+  color: #2196F3;
+}
