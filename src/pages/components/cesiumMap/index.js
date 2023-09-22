@@ -77,12 +77,12 @@ class CesiumMap extends Component {
         url: `${PUBLIC_PATH}Mars/marsConfig.json`,
         skyBox: new Cesium.SkyBox({
           sources: {
-            positiveX: "/skyBox/00h+00.jpg",
-            negativeX: "skyBox/12h+00.jpg",
-            positiveY: "/skyBox/06h+00.jpg",
-            negativeY: "/skyBox/18h+00.jpg",
-            positiveZ: "/skyBox/06h+90.jpg",
-            negativeZ: "/skyBox/06h-90.jpg",
+            positiveX: `${PUBLIC_PATH}skyBox/00h+00.jpg`,
+            negativeX: `${PUBLIC_PATH}skyBox/12h+00.jpg`,
+            positiveY: `${PUBLIC_PATH}skyBox/06h+00.jpg`,
+            negativeY: `${PUBLIC_PATH}skyBox/18h+00.jpg`,
+            positiveZ: `${PUBLIC_PATH}skyBox/06h+90.jpg`,
+            negativeZ: `${PUBLIC_PATH}skyBox/06h-90.jpg`,
           },
         }), //用于渲染星空的SkyBox对象
     
