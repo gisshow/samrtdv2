@@ -1,8 +1,0 @@
-{
-    "standard_address":{
-        "description":"地址反查，isDevOps：是否为运维转发",
-        "url":"/query/standard_address/"
-    }
-
-      
-}
