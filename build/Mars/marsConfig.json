@@ -58,7 +58,7 @@
       "compass": { "top": "180px", "right": "30px" }
     },
     "terrain": {
-      "url": "http://data.mars3d.cn/terrain",
+      "url": "https://data.mars3d.cn/terrain",
       "visible": true
     },
     "crs": "",
