@@ -535,7 +535,7 @@ mars3d.widget.bindClass(mars3d.widget.BaseWidget.extend({
 
   //   // $.ajax({
   //   //     type: "GET",
-  //   //     url: "/data/ocean/subject_hs.csv",
+  //   //     url: "/visualization/data/ocean/subject_hs.csv",
   //   //     dataType: "text",
   //   //     success: function(data) {
   //   //         var allTextLines = data.split(/\r\n|\n/);
@@ -1005,7 +1005,7 @@ mars3d.widget.bindClass(mars3d.widget.BaseWidget.extend({
     //
     //
     //  var ind=0;
-    //  $.getJSON("/data/ocean/szoceandata-wave.json", function(result){
+    //  $.getJSON("/visualization/data/ocean/szoceandata-wave.json", function(result){
     //      var features=result.features;
     //      features.forEach(function(feature) {
     //          var coordinates = feature.geometry.coordinates;

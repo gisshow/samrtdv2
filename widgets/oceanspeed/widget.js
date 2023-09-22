@@ -316,7 +316,7 @@ mars3d.widget.bindClass(mars3d.widget.BaseWidget.extend({
   getOceanData:function(fun){
     getFromCache("oceandata").then(function(val){
         if(!val) {
-            $.getJSON("/data/ocean/oceandata.json", function (result) {
+            $.getJSON("/visualization/data/ocean/oceandata.json", function (result) {
                 setToCache("oceandata",JSON.stringify(result))
                 fun(result);
             })
@@ -552,7 +552,7 @@ mars3d.widget.bindClass(mars3d.widget.BaseWidget.extend({
 
     }
 
-    $.getJSON('/data/ocean/sz_region.json', function(result) {
+    $.getJSON('/visualization/data/ocean/sz_region.json', function(result) {
       var features = result.features;
       features.forEach(function(feature) {
 
@@ -613,7 +613,7 @@ mars3d.widget.bindClass(mars3d.widget.BaseWidget.extend({
     });
 
     this.getOceanData(function(result){
-    // $.getJSON('/data/ocean/oceandata.json', function(result) {
+    // $.getJSON('/visualization/data/ocean/oceandata.json', function(result) {
 
 
       var data = [];
@@ -732,7 +732,7 @@ mars3d.widget.bindClass(mars3d.widget.BaseWidget.extend({
 
     // $.ajax({
     //     type: "GET",
-    //     url: "/data/ocean/ocean_flow.csv",
+    //     url: "/visualization/data/ocean/ocean_flow.csv",
     //     dataType: "text",
     //     success: function (data) {
     //         var allTextLines = data.split(/\r\n|\n/);
@@ -858,7 +858,7 @@ mars3d.widget.bindClass(mars3d.widget.BaseWidget.extend({
     getFromCache("oceandatacontoure11").then(function(val){
 
         if(!val) {
-            $.getJSON("/data/ocean/oceandata-wave-polygon.json", function (result) {
+            $.getJSON("/visualization/data/ocean/oceandata-wave-polygon.json", function (result) {
                 // setToCache("oceandatacontoure",JSON.stringify(result))
                 fun(result);
             });
@@ -918,7 +918,7 @@ getColorRamp:function(color, isVertical = true) {
 
     var rectangle = Cesium.Rectangle.fromDegrees(-180, -90, 180, 90);
     this.oceanLayer = viewer.imageryLayers.addImageryProvider(new Cesium.SingleTileImageryProvider({
-      url: '/data/ocean/ocean.png',
+      url: '/visualization/data/ocean/ocean.png',
       rectangle: rectangle,
     }));
     // console.log("add sz ocean");
@@ -926,7 +926,7 @@ getColorRamp:function(color, isVertical = true) {
     $('#loading').hide();//加载时间长优化
     this.getOceanPolygon(function(result){
       // console.log('测试数据',result)
-    // $.getJSON('/data/ocean/oceandata-wave-polygon.json', function(result) {
+    // $.getJSON('/visualization/data/ocean/oceandata-wave-polygon.json', function(result) {
       var features = result.features;
       // console.log(features.length,'nihaolength')
       features.forEach(function(feature) {
@@ -1099,7 +1099,7 @@ getColorRamp:function(color, isVertical = true) {
 
     });*/
 
-    // $.getJSON("/data/ocean/szoceandata-flow-polygon.json", function (result) {
+    // $.getJSON("/visualization/data/ocean/szoceandata-flow-polygon.json", function (result) {
     //
     //     var features=result.features;
     //     features.forEach(function(feature) {

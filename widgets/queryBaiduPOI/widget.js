@@ -2,8 +2,8 @@
 //模块：
 var public_image_path = '';
 
-// if (location.href.indexOf('') > -1) {
-//   public_image_path = '';
+// if (location.href.indexOf('/visualization') > -1) {
+//   public_image_path = '/visualization';
 // }
 const { publicPath } = window;
 if (publicPath) {
