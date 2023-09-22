@@ -1,0 +1,129 @@
+{
+  "说明/备份----无需修改": {
+    "whiteModel": {
+      "url": "/visualization/data/shekou_white_model/tileset.json",
+      "rendered": "是否根据楼层渲染 0:不渲染，floor参数无效 ; 1:渲染",
+      "floor": "楼层的字段名，shape文件中查看"
+    }
+  },
+  "dark": {
+    "whiteModel_dark": {
+      "url": "/lg3dtiles/shp_baimo/out_W/tileset.json",
+      "rendered": 1,
+      "key": "whiteModel_dark",
+      "color": "#2a9dea"
+    },
+    "global_dark_map": {
+      "url": "http://168.4.0.3:8842/OGC/ALL_WMS/wms",
+      "layerName": "Blue_world",
+      "key": "global_dark_map",
+      "crs": "EPSG:4490"
+    },
+    "blue_guandongRoad": {
+      "url": "http://168.4.0.3:8842/OGC/ALL_WMS/wms",
+      "layerName": "Blue_guandongRoad",
+      "key": "blue_guandongRoad",
+      "crs": "EPSG:4490"
+    },
+    "sz_dark_map": {
+      "url": "http://10.89.9.234:8080/arcgis/rest/services/LG/LG_1930_Black_cgcs/MapServer",
+      "description": "http://168.4.0.3:8842/OGC/Blue_shenzhe_wmts/gwc/service/wmts/rest/Blue_shenzhen/{TileMatrixSet}/{TileMatrixSet}:{TileMatrix}/{TileRow}/{TileCol}?format=image/png",
+      "tileMatrixSetID": "EPSG:4490",
+      "format": "image/png",
+      "key": "sz_dark_map"
+    }
+  },
+  "digital": {
+    "whiteModel": {
+      "url": "/lg3dtiles/shp_baimo/out_W/tileset.json",
+      "rendered": 1,
+      "key": "whiteModel",
+      "color": "#fff"
+    },
+    "global_map": {
+      "url": "http://168.4.0.3:8842/OGC/ALL_WMS/wms?service=WMS",
+      "layerName": "W_world",
+      "key": "global_map",
+      "crs": "EPSG:4490"
+    },
+    "sz_map": {
+      "url": "http://10.253.102.69/gw/OGC/Map/SZ_VEC_BASE_W4490/",
+      "url_bak": "http://168.4.0.3:8842/OGC/Blue_shenzhe_wmts/gwc/service/wmts/rest/w_shenzhen/{TileMatrixSet}/{TileMatrixSet}:{TileMatrix}/{TileRow}/{TileCol}?format=image/png",
+      "tileMatrixSetID": "EPSG:4490",
+      "format": "image/png",
+      "key": "sz_map"
+    }
+  },
+  "reality": {
+    "sz_district": {
+      "url": "/data/json/LG_PL.json",
+      "key": "sz_district"
+    },
+    "sz_road": {
+      "urls": {
+        "1000py": "http://168.4.0.3:8842/OGC/ALL_OWS/DZMAP/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=DZMAP%3Adlm_py_1000&outputFormat=application%2Fjson",
+        "1000pl": "http://168.4.0.3:8842/OGC/ALL_OWS/DZMAP/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=DZMAP%3Adlzxx_pl_1000&outputFormat=application%2Fjson",
+        "500000pl": "http://168.4.0.3:8842/OGC/ALL_OWS/QT/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=QT%3Adlzxx_pl_5000000&outputFormat=application%2Fjson",
+        "50000pl": "http://168.4.0.3:8842/OGC/ALL_OWS/DZMAP/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=DZMAP%3Adlzxx_pl_50000&outputFormat=application%2Fjson",
+        "250000pl": "http://168.4.0.3:8842/OGC/ALL_OWS/DZMAP/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=DZMAP%3Adlzxx_pl_250000&outputFormat=application%2Fjson"
+      },
+      "key": "sz_road"
+    },
+    "sz_poi": {
+      "url": "http://168.4.0.3:8842/OGC/Blue_shenzhe_wmts/gwc/service/wmts",
+      "layername": "QT:DB20POI",
+      "key": "sz_poi"
+    },
+    "sz_yx": {
+      "url": "http://10.253.102.69/gw/OGC/Map/SZ_IMGTDOM02_2019/{z}/{x}/{y}"
+    },
+    "sz_osgb": {
+      "description": "直接改地址，不要用代理，代理会把倾斜摄影变慢",
+      "url": "http://168.4.0.3:8831/f/q/shenzhen_final/tileset.json",
+      "maximumScreenSpaceError": 14,
+      "maximumMemoryUsage": 36000,
+      "preferLeaves": true,
+      "offsetHeight": -0,
+      "authorization": "Basic bG9jdXM6bndldmRidnBh",
+      "children": {
+        "longgang": "http://192.168.10.41:8080/gw/TILE_3D_MODEL/sz/longgang/tileset.json",
+        "futian": "http://192.168.10.41:8080/gw/TILE_3D_MODEL/sz/futian/tileset.json",
+        "nanshan": "http://192.168.10.41:8080/gw/TILE_3D_MODEL/sz/nanshan/tileset.json",
+        "longhua": "http://192.168.10.41:8080/gw/TILE_3D_MODEL/sz/longhua/tileset.json",
+        "baoan": "http://192.168.10.41:8080/gw/TILE_3D_MODEL/sz/baoan/tileset.json",
+        "luohu": "http://192.168.10.41:8080/gw/TILE_3D_MODEL/sz/luohu/tileset.json",
+        "pingshan": "http://192.168.10.41:8080/gw/TILE_3D_MODEL/sz/pingshan/tileset.json",
+        "yantian": "http://192.168.10.41:8080/gw/TILE_3D_MODEL/sz/yantian/tileset.json",
+        "dapeng": "http://192.168.10.41:8080/gw/TILE_3D_MODEL/sz/dapeng/tileset.json",
+        "guangming": "http://192.168.10.41:8080/gw/TILE_3D_MODEL/3D/QX_GM_UPDATE_0813/tileset.json"
+      }
+    },
+    "dantihua": {
+      "maximumScreenSpaceError": 8,
+      "maximumMemoryUsage": 3600,
+      "preferLeaves": true,
+      "offsetHeight": -0,
+      "authorization": "Basic bG9jdXM6bndldmRidnBh",
+      "children": {
+        "futian": "http://168.4.0.26:8098/f/q/FTJZ/tileset.json",
+        "nanshan": "http://168.4.0.26:8098/f/q/nanshan_dantihua_1018/tileset.json",
+        "baoan1": "http://168.4.0.26:8098/f/q/baoanql3dtiles/tileset.json",
+        "baoan2": "http://168.4.0.26:8098/f/q/baoanzb3dtiles/tileset.json",
+        "baoan3": "http://168.4.0.26:8098/f/q/baoanjz3dtiles/440306001/tileset.json",
+        "baoan4": "http://168.4.0.26:8098/f/q/baoanjz3dtiles/440306001/tileset.json",
+        "baoan5": "http://168.4.0.26:8098/f/q/baoanjz3dtiles/440306011/tileset.json",
+        "baoan6": "http://168.4.0.26:8098/f/q/baoanjz3dtiles/440306013/tileset.json",
+        "baoan7": "http://168.4.0.26:8098/f/q/baoanjz3dtiles/440306014/tileset.json"
+      }
+    },
+    "dem": {
+      "url": "http://168.4.0.26:8098/f/q/mesh20m/"
+    },
+    "lhzk_poi": {
+      "name": "新加的钻孔位置的POI点",
+      "url": "http://168.4.0.3:8842/OGC/ALL_WMS/QT/wfs",
+      "layername": "QT:lhzk4490",
+      "key": "lhzk_poi"
+    }
+  }
+}

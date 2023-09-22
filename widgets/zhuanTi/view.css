@@ -1,0 +1,36 @@
+.bottombar {
+    position: absolute;
+    left:10px;
+    top:  100px;
+    margin: 0px;
+    padding: 0px;
+    background: #26354F;
+    border: 1px solid #414B64;
+    border-radius: 1px;
+}
+
+
+.spnaclass{
+    margin: 0px;
+    padding: 0px;
+    width: 100px;
+    height: 38px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #979FB0;
+    background: #26354F;
+    border:0px solid #414B64;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.spnaclass:hover{
+    background: #181E38;
+    border: 1px solid #414B64;
+}
+
+
+.selectbtn{
+    background: #181E38;
+    border: 1px solid #414B64;
+}

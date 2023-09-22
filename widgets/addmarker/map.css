@@ -1,0 +1,64 @@
+/* 2017-11-14 13:31:05 | 修改 木遥（QQ：516584683） */
+.addmarker-popup-titile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 3px 3px 0 0;
+    padding: 0 80px 0 20px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    color: white;
+    overflow: hidden;
+}
+.mars3d-popup-close-button{
+    color: #fff !important;
+}
+.mars3d-popup-close-button:hover{
+    color: #fff !important;
+    text-decoration: none !important;
+}
+.addmarker-popup-content {
+    width: 336px;
+    margin-top: 52px;
+    font-size: 14px;
+}
+
+.form-group {
+    color: #333333;
+}
+ .dark .form-group {
+   color: #E0E9F6;
+}
+
+.addmarker-popup-content .form-group{
+    display: grid;
+    grid-template-columns: 44px auto;
+}
+.addmarker-popup-content .form-group:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+.addmarker-popup-content .form-group .btn{
+    width: 154px;
+    height: 46px;
+    background: none;
+    border: 1px solid #3A86F3;
+    color: white;
+    border-radius: 0 !important;
+}
+.addmarker-popup-content .form-group .btn-save{
+    background: rgba(58,134,243,0.60);
+}
+.addmarker-popup-content label{
+    margin-bottom: 0;
+}
+.addmarker-popup-content{
+    line-height: 40px;
+}
+#add-marker-form input, #add-marker-form textarea{
+    background-color: rgba(38,53,79,0.60) !important;
+    border-radius: 0 !important;
+    border: none !important;
+}

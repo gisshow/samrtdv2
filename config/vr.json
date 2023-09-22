@@ -1,0 +1,63 @@
+{
+    "vr": "配置全景信息",
+    "data": [
+        {
+            
+            "name": "光明高中园",
+            "date": "2021-08-09Z",
+            "x_coord": "113.885740684248",
+            "y_coord": "22.7651822113056",
+            "url": "http://168.4.0.3/sdk/720VR/guangming/index.html",
+            "folder_name": "guangming"
+            
+        },
+        {
+           
+            "name": "科高拜仁足球学校",
+            "date": "2021-08-09Z",
+            "x_coord": "114.286026828552",
+            "y_coord": "22.7544974493272",
+            "url": "http://168.4.0.3/sdk/720VR/kegao/index.html",
+            "folder_name": "kegao"
+            
+        },
+        {
+           
+            "name": "龙岗坪地高中园",
+            "date": "2021-08-09Z",
+            "x_coord": "114.277227546836",
+            "y_coord": "22.7816771379747",
+            "url": "http://168.4.0.3/sdk/720VR/longgang/index.html",
+            "folder_name": "longgang"
+        },
+        {
+            
+            "name": "罗湖外国语学校",
+            "date": "2021-08-09Z",
+            "x_coord": "114.178357372973",
+            "y_coord": "22.5667446610604",
+            "url": "http://168.4.0.3/sdk/720VR/luohu/index.html",
+            "folder_name": "luohu"
+        },
+        {
+           
+            "name": "市人大附中",
+            "date": "2021-08-09Z",
+            "x_coord": "114.346070373601",
+            "y_coord": "22.6134242974522",
+            "url": "http://168.4.0.3/sdk/720VR/renda/index.html",
+            "folder_name": "renda"
+            
+        },
+        {
+           
+            "name": "市二十七高级中学",
+            "date": "2021-08-09Z",
+            "x_coord": "114.03629483016",
+            "y_coord": "22.6295811680467",
+            "url": "http://168.4.0.3/sdk/720VR/shi27/index.html",
+            "folder_name": "shi27"
+            
+        }
+    ]  
+}

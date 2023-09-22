@@ -1,0 +1,13 @@
+[{
+    name:"实景三维",
+    key:"REALITY",
+    img:'$#$config/images/google_img2.jpg'
+    },{
+    name:"白色电子",
+    key:"DIGITAL",
+    img:'$#$config/images/tdt_vec2.jpg'
+    },{
+    name:"深色电子",
+    key:"DARK",
+    img:'$#$config/images/bd-c-dark2.jpg'
+}]

@@ -1,0 +1,79 @@
+::-webkit-scrollbar{
+    width: 4px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background-color: rgba(200, 255, 253, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(200, 255, 253, 0.4);
+}
+
+::-webkit-scrollbar-thumb:active{
+    background-color: rgba(58, 134, 243, 0.4);
+}
+
+.line-point{
+    position: relative;
+    width: calc(100% - 10px);
+    height: 1px;
+    background-color: #3A435A;
+    margin: 20px 5px;
+}
+.line-point::before, .line-point::after{
+    position: absolute;
+    top: -2px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #3A435A;
+}
+.line-point::before{
+    left: -5px;
+}
+.line-point::after{
+    right: -5px;
+}
+.bx-popup-ctn{
+    position: absolute;
+    z-index: 999;
+    background: #fff;
+}
+.bx-popup-tip-container {
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    overflow: hidden;
+    pointer-events: none;
+}
+.bx-popup-tip {
+    width: 17px;
+    background: #fff;
+    height: 17px;
+    padding: 1px;
+    margin: -10px auto 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.bx-popup-header-ctn{
+    background: #090302;
+    color: #fff;
+    font-size: 15px;
+    padding: 4px;
+}
+.bx-popup-content-ctn{
+    padding:15px ;
+}
+.leaflet-popup-close-button{
+    user-select: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    cursor: pointer;
+}
