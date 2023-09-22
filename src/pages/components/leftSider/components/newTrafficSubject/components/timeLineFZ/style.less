@@ -1,0 +1,176 @@
+.timeline{
+    z-index:1;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 20px 24px;
+    width: calc(100% - 1000px);
+    height: 72px;
+    left:50%;
+    transform: translate(-50%, 0);
+    bottom: 32px;
+    background: rgba(8, 13, 42, 0.9);
+    border: 1px solid #3C5073;
+    .close{
+      position: absolute;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #64A8C5;
+      font-size: 12px;
+      margin-left: 8px;
+      &:hover{
+        background-color: rgba(58, 134, 243, 0.2)
+      }
+      &:active{
+        color: white;
+        background-color: rgba(58, 134, 243, 0.4)
+      }
+    }
+    
+    .timeContral{
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      width: 100%;
+      .timeLabel{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        color: rgba(255,255,255,0.65);
+        margin-bottom: 4px;
+      }
+      .ruler{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        top: 20px;
+        span{
+          display: inline-block;
+          width: 5px;
+          height: 5px;
+          background-color: #e0e9f6;
+        }
+      }
+      .slider{
+        width: 100%;
+      }
+    }
+
+    .timeBox{
+        position: absolute;
+        margin: 10px;
+    }
+    
+    :global{
+      .ant-slider{
+        width:100%;
+        margin: 15px 0px 20px;
+        z-index: 1;
+        &:hover{
+          .ant-slider-rail {
+            background-color: #4B6E81;
+          }
+        }
+        .ant-slider-dot:first-child {
+          margin-left: 0px;
+        }
+        .ant-slider-dot:last-child {
+          margin-left: 0px;
+        }
+        .ant-slider-dot{
+          top: 0px;
+          width: 4px;
+          height: 6px;
+          border-radius: 0px;
+          border: 2px solid #999;
+        }
+        // &::before{
+        //     content: '';
+        //     width: 6px;
+        //     height: 15px;
+        //     background: #4b6e81;
+        //     position: absolute;
+        //     top: 0px;
+        //     left: -4px
+        //   }
+        // &::after{
+        //     content: '';
+        //     width: 6px;
+        //     height: 15px;
+        //     background: #4b6e81;
+        //     position: absolute;
+        //     top: 0px;
+        //     right: -4px;
+        // }
+      }
+      .ant-slider-track{
+        background-color:#4B6E81;
+      }
+      .ant-slider-rail,.ant-slider-track{
+        height:6px;
+        border-radius:0px;
+        
+      }
+      .ant-slider-rail{
+        background-color: #4B6E81;
+      }
+      .ant-slider-handle{
+        width:8px;
+        height:24px;
+        background-color:#E0E9F6;
+        border:none;
+        border-radius:0px;
+        margin-top: -8px;
+        margin-left: 2px;
+      }
+    }
+  
+  }
+  :global{
+  input.slider[type=range]{
+    -webkit-appearance: button;
+    // width: 300px;
+    border-radius: 10px;
+  }
+  
+  input.slider[type=range]:focus{
+    outline:none;
+  }
+  
+  input.slider[type=range]::webkit-slider-thumb{
+    -webkit-appearance: button;     //以下样式随个人喜好
+    // width: 125px;   
+    // height: 125px;
+    // margin-top: -5px;     //让滑轨在滑块中间
+    cursor: pointer;
+    border-radius: 50%;
+    background: rgb(16, 188, 231);
+    box-shadow: 0 0 10px #63A35C inset;    
+  }
+  
+  input.slider[type=range]{
+    &::-webkit-slider-thumb{
+      -webkit-appearance:button;
+    }
+    &::-moz-range-track
+      {
+        height: 15px;
+      border-radius: 10px;
+      border: 1px solid currentcolor;
+      }
+    &::-webkit-slider-runnable-track
+      {
+        height: 15px;
+      border-radius: 10px;
+      border: 1px solid currentcolor;
+      }
+  }
+  }
+  

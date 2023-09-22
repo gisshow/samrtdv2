@@ -1,0 +1,130 @@
+@import '~@/styles/mixins';
+
+.box {
+    width: 400px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 16px;
+    background: #181c31;
+    .title{
+      .icon{
+        margin-right: 2px;
+      }
+      span:not(:first-child){
+        margin-right: 20px;
+      }
+    }
+  .tree {
+    width: 147%;
+    background: #293345;
+  }
+
+  :global {
+    .ant-tree{
+      overflow-x: hidden;
+      overflow-y: auto;
+      height: 520px;
+    }
+    .ant-tree>li {
+      position: relative;
+      padding: 12px 0;
+      border-bottom: solid 2px #181c31;
+      .ant-tree-child-tree {
+        margin-top: 6px;
+      }
+    }
+    .ant-tree li .ant-tree-node-content-wrapper {
+      color: #bbc4d2;
+      font-size: 14px;
+      cursor: default;
+      .ant-tree-title {
+        display: inline-block;
+        .ellipsis(280px)
+      }
+    }
+    li.ant-tree-treenode-disabled > .ant-tree-node-content-wrapper span {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    //checkbox
+    .ant-tree-checkbox-inner {
+      top: -1px;
+      border: 1px solid #175E90;
+      //box-shadow: inset 0 0 12px 0 #3774E2;
+      background: none;
+      border-radius: 0;
+      width: 18px;
+      height: 18px;
+    }
+    .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner {
+      position: relative;
+      border: 1px solid #fff;
+      &:after {
+        content: none;
+      }
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 12px;
+        height: 12px;
+        background: #fff;
+      }
+    }
+    .ant-tree-checkbox-checked .ant-tree-checkbox-inner {
+      position: relative;
+      border: 1px solid #fff;
+    }
+    .ant-tree-checkbox-disabled .ant-tree-checkbox-inner {
+      border: none;
+    }
+    //selected
+    .ant-tree li .ant-tree-node-content-wrapper{
+      &:hover,
+      &.ant-tree-node-selected {
+        background: #756422;
+      }
+    }
+    //下拉icon
+    .ant-tree li span.ant-tree-switcher {
+      position: absolute;
+      top: 4px;
+      right: 10px;
+      .vm()
+    }
+    .ant-tree li span.ant-tree-switcher.ant-tree-switcher_close .ant-tree-switcher-icon {
+      transform: scale(1) rotate(180deg);
+      svg {
+        color: #92969d;
+      }
+    }
+    .ant-tree li span.ant-tree-switcher.ant-tree-switcher_open .ant-tree-switcher-icon {
+      transform: scale(1) rotate(270deg);
+      svg {
+        color: #92969d;
+      }
+    }
+    .ant-tree.ant-tree-show-line li:not(:last-child)::before{
+      border:solid 1px transparent;
+    }
+    .ant-tree.ant-tree-show-line li span.ant-tree-switcher{
+      background: transparent;
+    }
+    .ant-tree.ant-tree-show-line li span.ant-tree-switcher .anticon-file{
+      display: none;
+    }
+    .ant-tree li span.ant-tree-checkbox{
+      margin: 0 4px 0 16px;
+    }
+  }
+}
+
+.show {
+  display: block;
+}
+
+.hide{
+  display: none;
+}

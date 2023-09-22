@@ -1,0 +1,102 @@
+.PipePanel{
+    border: 1px solid #569EEB;
+    background: rgba(12,17,26,0.90);
+    filter: alpha(opacity=50);
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #999999;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform:translateX(-50%) ;
+    // width: 426px;
+    // z-index: 1000;     
+    padding: 15px 30px;
+    // padding-left:15px;
+    // padding-bottom: 20px;
+    background: rgba(12,17,26,0.90);
+    border: 4px solid rgba(86,158,235,0.40);
+    :global{
+        .ant-slider{
+            width: 262px;
+            height: 6px;
+            display: inline-block;
+        }
+        .ant-slider-rail,.ant-slider-track{
+            height: 6px;
+            border-radius: 2px;
+        }
+        .ant-slider-track{
+            background:#5F6166;;
+        }
+        .ant-slider-handle{
+            width:12px;
+            height: 12px;
+            border:none;
+            background-image: linear-gradient(-43deg, #E5E5E5 0%, #FFFFFF 100%);
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+        }
+        .ant-input-number-handler-wrap {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 21px;
+          height: 100%;
+          background: #fff;
+          border-left: 1px solid #d9d9d9;
+          border-radius: 0 4px 4px 0;
+          opacity: 0;
+          transition: opacity 0.24s linear 0.1s;
+      }
+        .ant-input-number-handler-up  .ant-input-number-handler-down{
+          box-shadow: inset 0 0 0 0 rgba(255,255,255,0.20), inset 1px 0 0 0 rgba(255,255,255,0.20);
+          border-radius: 0 2px 0 0;
+          border: 1px solid #6D6D6D;
+        }
+        .ant-input-number-handler-up-inner svg, .ant-input-number-handler-down-inner svg {
+          display: inline-block;
+        }
+        .ant-input-number{
+            border: 1px solid #6D6D6D;
+            border-radius: 2px;
+            width: 88px;
+            height:32;
+            background: rgba(12,17,26,0.90);
+            margin-top: 5px;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #999999;
+            line-height: 22px;
+        }
+        .ant-btn{
+            width: 96px;
+            height:32px;
+            background: rgba(12,17,26,0.90);
+            border: 1px solid #6D6D6D;
+            border-radius: 1px;
+            color: #FFFFFF;
+            font-family: MicrosoftYaHei;
+            font-size: 14px;
+          }
+          .ant-btn:active{
+            background: #569EEB;
+          }
+          .ant-btn:focus{
+            background: #569EEB;
+          }
+    }
+    .closeV{
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      font-size: 25px;
+      text-align: center;
+      border: none;
+      right: 5px;
+      top: -10px;
+      background: none;
+    }
+    .closeV:active{
+      color:#569EEB
+    }
+}

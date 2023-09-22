@@ -1,0 +1,52 @@
+.clip{
+    display: flex;
+    align-items: center;
+    // position: absolute;
+    padding: 10px;
+    // width: calc(100% - 1000px);
+    // height: 72px;
+    // left:50%;
+    // transform: translate(-50%, 0);
+    // bottom: 132px;
+    background: rgba(8, 13, 42, 0.9);
+    border: 1px solid #3C5073;
+    flex-direction: column;
+    // height: 240px;
+    .item{
+      font-size: 14px;
+      color: #E0E9F6;
+      font-weight: 400;
+      margin-bottom: 10px;
+      width: 100%;
+      .name{
+        margin-right: 16px;
+      }
+
+      &.slider{
+        display: flex;
+        align-items: center;
+      }
+      
+    }
+    .btn{
+      width: 70px;
+      height: 30px;
+      display: inline-block;
+      text-align: center;
+      line-height: 30px;
+      background: rgba(33,39,62,0.60);
+      margin-right: 10px;
+      cursor: pointer;
+      &:hover,&:active{
+        background: #40a9ff;
+      }
+    }
+
+    :global{
+      .ant-slider{
+        width:60%;       
+      }
+      
+    }
+
+}

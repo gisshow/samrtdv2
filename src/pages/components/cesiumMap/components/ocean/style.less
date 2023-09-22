@@ -1,0 +1,179 @@
+
+.showQuanjing{
+    height: 350px !important;
+    // height: 265px !important;
+  }
+
+
+
+.OceanPanel{
+    padding: 10px;
+    background: rgba(12,17,26,0.90);
+    filter: alpha(opacity=50);
+    font-family: PingFangSC-Regular;
+    width: 100%;
+    height: 100%;
+    color: #E0E9F6;
+    letter-spacing: -0px;
+    text-align: center;
+    border:1px solid #3C5073;
+
+    .title{
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    .rowItem{
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .name{
+        font-size: 16px;
+        color: #F5FFFF;
+    }
+
+    .item{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        .name{
+          opacity: 0.6;
+        }
+        .value{
+          text-align: right;
+          &.green{
+            font-size: 20px;
+            color: #52C41A
+          }
+        }
+      }
+    .label{
+        font-size: 14px;
+        color: rgba(255,255,255,0.7);
+    }
+
+    :global{
+        .ant-col{
+          text-align: left;
+          .ant-checkbox-group{
+            width: 100%;
+          }
+        }
+        .ant-slider{
+            width: 378px;
+            position:absolute;
+            // left:280px;
+            top:-9px;
+        }
+        .ant-slider-rail,.ant-slider-track{
+            border-radius: 8px;
+        }
+        .ant-slider-track{
+            background: rgba(86,158,235,0.40);
+        }
+        .ant-slider-handle{
+           // width:16px;
+           // height: 24px;
+            border:none;
+            background-image: linear-gradient(0deg, #FFFFFF 0%, #569EEB 100%);
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+            border-radius: 8px;
+        }
+        .ant-input-number{
+            width: 86px;
+            background: rgba(12,17,26,0.90);
+            border: 1px solid #6D6D6D;
+            border-radius: 1px;
+            color: #FFFFFF;
+        }
+        .ant-input-number:active{
+          background: #569EEB;
+          border: 2px solid #569EEB;
+            }
+           
+        .ant-input-number:focus{
+              background: #569EEB;
+              border: 2px solid #569EEB;
+                }
+
+        .ant-btn{
+          width: 86px;
+          height:32px;
+          background: rgba(12,17,26,0.90);
+          border: 1px solid #6D6D6D;
+          border-radius: 1px;
+          color: #FFFFFF;
+          font-family: MicrosoftYaHei;
+          font-size: 14px;
+            }
+        .ant-btn:active{
+            background: #569EEB;
+              }
+        .ant-btn:focus{
+            background: #569EEB;
+              }
+        .ant-checkbox + span{
+          color: #F5F2EB;
+        }
+    }
+}
+
+.bottom{
+  width: 56px;
+  height: 56px;
+  background: rgba(8,13,42,0.4);
+  position: absolute;
+  bottom: 10px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .icon{
+    color: #64A8C5;
+    &:hover{
+      color: #fff;
+    }
+  }
+}
+
+.PipePdiv{
+    width: 540px;
+    height: 130px;
+    background: rgba(8,13,42,0.90);
+    border: 1px solid #3C5073;
+    position:absolute;
+    bottom: 10px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    z-index: 1000;     
+    display:flex;
+    align-items: center;
+    filter: alpha(opacity=50);
+    transition: all 0.5s;
+    .close{
+      position: absolute;
+      top: 15px;
+      right: 10px;
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      z-index: 9999;
+      .icon{
+        color: #64A8C5;
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+  }
+
+.toolsShow {
+  bottom: -740px;
+}
+.toolsHide{
+  bottom: 10px;
+}

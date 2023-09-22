@@ -1,0 +1,69 @@
+.MeasurePanel{
+    border: 1px solid #3c5073;
+    background: rgba(12,17,26,0.90);
+    filter: alpha(opacity=50);
+    font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    bottom:25px;
+    width:530px;
+    height:100px;
+    z-index: 1000;     
+    display:flex;
+    align-items: left;
+    
+    .close{
+      position: absolute;
+      right: 5px;
+      top:5px;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    .container{
+      padding:20px 16px 10px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      // justify-content: space-between;
+      .controlScope{
+        margin-right: 30px;
+      }
+      .controlScope,.controlWay{
+        display: flex;
+        flex-direction: row;  
+        justify-content: space-between; 
+        .pipbutton{
+          width: 108px;
+          height: 40px;
+          background: rgba(255,255,255,0.10);
+          border: 1px solid #569EEB;
+          border-radius:0;
+          color: #FFFFFF;
+          cursor: pointer;
+        }
+        .buttonActive{
+          background: rgba(58,134,243,0.60);
+          border: 1px solid #3A86F3;
+        }
+        .pipbutton:hover,.pipbutton:active{
+          background: rgba(58,134,243,0.60);
+          border: 1px solid #3A86F3;
+        }
+        .marginBtn{
+          margin-right: 8px;
+        }
+      }
+      .title{
+        font-size: 14px;
+        color: #E0E9F6;
+        margin-bottom: 12px;
+      }
+      
+    }
+  }
+
+  

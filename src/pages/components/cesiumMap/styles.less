@@ -1,0 +1,171 @@
+.cesiumContainer {
+  background-repeat: no-repeat;
+  background-size: 100%; 
+  width: 100%;
+  height: 100%;
+  .sliderc{
+	  position: absolute;
+	  left: 0px;
+	  top: 63.5%;
+	  background-color: #D3D3D3;
+	  width: 100%;
+	  height: 3px;
+	  z-index: 1;
+	  display: none;
+  }
+  .slidercimg{
+	position: absolute;
+	left: 0px;
+	top: 63.9%;
+	background-image: url("./img/excavate_k.jpg");
+	width: 100%;
+	height: 25px;
+	z-index: 1;
+	background-repeat: round;
+	display: none;
+  }
+  
+}
+
+.minimap {
+    border: solid rgba(255, 255, 255, 1.0) 4px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+    border-radius: 3px;
+    background: #f8f8f9;
+    transition: all .6s;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 10px;
+    top: 150px;
+    z-index: 1;
+}
+.minimap a {
+	background-color: rgba(255, 255, 255, 1.0);
+	background-repeat: no-repeat;
+	z-index: 99999;
+	transition: all .6s;
+}
+
+.minimap a.minimized-bottomright {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	border-radius: 0px;
+}
+
+.minimap a.minimized-topleft {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	border-radius: 0px;
+}
+
+.minimap a.minimized-bottomleft {
+	-webkit-transform: rotate(270deg) !important;
+	transform: rotate(270deg) !important;
+	border-radius: 0px;
+}
+
+.minimap a.minimized-topright {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	border-radius: 0px;
+}
+
+.minimapdisplay{
+	background-image: url("./img/toggle.png");
+	background-size: cover;
+	right: 12px;
+    top: 280px;
+	position: absolute;
+	border-radius: 3px 0px 0px 0px;
+	z-index: 99;
+}
+
+.leaflet-oldie .minimap-toggle-display{
+	background-image: url("./img/toggle.png");
+}
+
+.minimap-toggle-display-bottomright {
+	bottom: 0;
+	right: 0;
+}
+
+.minimap-toggle-display-topleft{
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.minimap-toggle-display-bottomleft{
+	bottom: 0;
+	left: 0;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.minimap-toggle-display-topright{
+	top: 0;
+	right: 0;
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+
+/* Old IE */
+.leaflet-oldie .minimap {
+	border: 1px solid #999;
+}
+
+.leaflet-oldie .minimap a {
+	background-color: #fff;
+}
+
+.leaflet-oldie .minimap a.minimized {
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+.close{
+	position: absolute;
+	right: 5px;
+	top:5px;
+	width: 20px;
+	height: 20px;
+	background: #000;
+	opacity: 0.8;
+	border-radius: 50%;
+	a{
+	  padding-left: 0px;
+	}
+  }
+  .close a::before {
+	content: "\2716";
+  }
+
+:global{
+  .cesium-viewer-bottom{
+    display:none !important;
+  }
+}
+.mains{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(139, 190, 241, 0.33);
+  position: absolute;
+  z-index: 6;
+  text-align: center;
+  display: none;
+}
+.loadings{
+  width: 80px;
+  height: 40px;
+  margin: 0 auto;
+  align-content: center;
+  margin-top: 22%;
+  font-size: 20px;
+}
+.loadings span{
+  font-size: 60px;
+}
+.loadings span i{
+  width: 30px;
+  height: 30px;
+}

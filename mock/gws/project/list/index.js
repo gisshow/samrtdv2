@@ -1,0 +1,77 @@
+export default {
+  'POST /gws/project/list': {
+    success: true,
+    code: 200,
+    msg: '请求成功',
+    data: [
+      {
+        id: 14,
+        projectName: '音乐学院',
+        longitude: 114.200628,
+        latitude: 22.687224,
+        height: 60,
+        geojsonPath: '/data/json/buildA-6-1.geojson',
+        controlHeight: 60,
+        url: '/data/bim/yyxy4/tileset.json',
+        tiltAddress: null,
+        tiltScope: null,
+        projectLocation: null, // 项目区域
+        updateTime: '2022-11-23 10:30:46', // 更新时间
+        projectCode: 'YYXY2022', // 项目编码
+        projectType: '教育类', // 项目分类
+      },
+      {
+        id: 20,
+        projectName: '科技馆',
+        longitude: 113.93904,
+        latitude: 22.774353,
+        height: 22,
+        geojsonPath: '/data/json/kjg.geojson',
+        controlHeight: 3,
+        url: null,
+      },
+      {
+        id: 23,
+        projectName: '第三儿童医院',
+        longitude: 114.23359700848,
+        latitude: 22.7435992088844,
+        height: 43,
+        geojsonPath: '/data/json/shucheng1.geojson',
+        controlHeight: 100,
+        url: null,
+      },
+      {
+        id: 22,
+        projectName: '自然馆',
+        longitude: 114.3574,
+        latitude: 22.6946,
+        height: 53,
+        geojsonPath: '/data/json/zrg4490.geojson',
+        controlHeight: 100,
+        url: null,
+      },
+      {
+        id: 19,
+        projectName: '湾区书城',
+        longitude: 113.878846,
+        latitude: 22.54752,
+        height: 30,
+        geojsonPath: '/data/json/shucheng2.geojson',
+        controlHeight: 5,
+        url: '/data/bim/shucheng1/tileset.json',
+        tiltAddress: '/data/bim/test1/tileset.json',
+        tiltScope: '/data/json/test1.geojson',
+      },
+      {
+        id: 30,
+        projectName: '阜外二期',
+        longitude: 113.943158,
+        latitude: 22.560057,
+        height: 22,
+        geojsonPath: '/data/json/阜外二期2.geojson',
+        controlHeight: 3,
+        url: '/data/bim/shucheng2/tileset.json',
+      },
+    ],
+  },
+};

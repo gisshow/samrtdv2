@@ -1,0 +1,198 @@
+.region{
+    :global {
+        .ant-tabs-bar {
+            display: block !important;
+            padding-left: 24px;
+            margin: 0;
+            background: #21273e;
+        }
+        .ant-tabs-nav {
+            font-size: 18px;
+        }
+        .ant-tabs-nav .ant-tabs-tab {
+            padding: 21px 0 16px 0 !important;
+        }
+        .ant-tabs .ant-tabs-large-bar .ant-tabs-tab {
+            padding: none !important;
+        }
+        .ant-tabs .ant-tabs-large-bar .ant-tabs-tab:active {
+            color: #fff9fc;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+            height: none;
+            color: #fff9fc;
+            font-size: 18px;
+            background: none;
+            border: 1px solid #1890ff !important;
+            margin-right: 0px !important;
+            border-radius: 0px !important;
+        }
+        .ant-tabs-nav .ant-tabs-tab-active {
+            color: #fff9fc !important;
+            background-color: #21273e !important;
+        }
+
+        // .ant-tabs .ant-tabs-top-content.ant-tabs-content-animated, .ant-tabs .ant-tabs-bottom-content.ant-tabs-content-animated {
+        //     border-top: 2px solid #414B64;
+        //
+        .ant-tabs .ant-tabs-top-content > .ant-tabs-tabpane, .ant-tabs .ant-tabs-bottom-content > .ant-tabs-tabpane {
+            border-top: 1px solid #414B64;
+            padding-top: 30px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        .ant-row {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        .ant-col-14 {
+            margin-right: 5px;
+        }
+        .ant-input-number {
+            height: 36px !important;
+            width: 72px !important;
+            border: 1px solid rgba(142,224,248,0,20);
+            background: #1E243A;
+            color: #E0E9F8;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .ant-input-number-handler-wrap {
+            background: #0E142F;
+            border-left: 0px solid #d9d9d9;
+        }
+        .ant-input-number-handler-up {
+            border-top-right-radius:0px !important;
+        }
+        .ant-input-number-handler-down {
+            border-top: 0px solid #d9d9d9 !important;
+            border-bottom-right-radius: 0px !important;
+        }
+        .ant-slider-rail {
+            background: #404040;
+        }
+        .ant-slider-track {
+            background: #3A86F3;
+        }
+        .ant-slider-rail:hover {
+            background: none ;
+        }
+    }
+}
+.headerschool {
+    color: #979FB0;
+}
+
+.population {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #babcc3;
+    margin-bottom: 20px;
+}
+.total {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 25px 0 0;
+}
+.total:first-child {
+    margin-right: 75px;
+}
+.total>div:first-child {
+    font-size: 25px;
+    color: #88d7ec;
+    margin-bottom: 8px;
+}
+.zeras {
+    height: 180px;
+    overflow-y: auto;
+}
+.line {
+    width: 356px;
+    margin-top: 10px;
+    height: 2px;
+    background: #3A435A;
+}
+.feters {
+    color: #979FB0;
+    font-weight: 400;
+    width: 352px;
+    height: 36px;
+    background-color: rgba(38, 53, 79, 0.6);
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #3A435A;
+    cursor: pointer;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    margin-bottom: 24px;
+}
+.footertop {
+    margin-top: 24px;
+}
+// .concetlist {
+//     overflow-y: auto;
+// }
+.scrollBox {
+    // position: absolute;
+    // top: 112px;
+    // bottom: 54px;
+    max-height: 35vh;
+    // max-height: calc(100% - 0px);
+    // min-height: 10vh;
+    margin-top:-12px;
+    overflow-y:overlay;
+    &.query{
+      max-height: 68vh;
+    }
+}
+.footer{
+    position: absolute;
+    width: calc(100% - 48px);
+    bottom: 10px;
+    // margin-bottom: 24px;
+    .btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 5px;
+      height: 32px;
+      color: #E0E9F6;
+      cursor: pointer;
+      background: rgba(33,39,62,0.60);
+      border: 1px solid #3A86F3;
+      &:hover{
+          background: rgba(58,134,243,0.20);
+      }
+      &:active{
+          background: rgba(33,39,62,0.80);
+          border: 1px solid #E0E9F6;
+      }
+    }
+  }
+.fequser {
+    margin-top: 24px !important;
+}
+.title {
+    font-size: 16px;
+    color: #E0E9F6;
+    .radius{
+      font-size: 14px;
+      color: #979FB0;
+      margin-right: 10px;
+    }
+    .slider{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      :global{
+        .ant-input-number{
+          background: #1E243A;
+          color: #E0E9F6;
+          border: 1px solid rgba(142,224,248,0.20);
+          .ant-input-number-handler-wrap{
+            background: #0E142F;
+          }
+        }
+      }
+    }
+  }

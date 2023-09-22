@@ -1,0 +1,55 @@
+.roam{
+    position: absolute;
+    // width: 787px;
+    // height: 59px;
+    bottom: 20px;
+    left: 50%;
+    transform:translateX(-50%) ;
+    display:flex;
+    align-items: center;
+    background: rgba(12,17,26,0.90);
+    border: 4px solid rgba(86,158,235,0.40);
+    padding: 16px 24px;
+    .close{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 0px;
+        top:0px;
+        transform: rotate(45deg);
+        cursor: pointer;
+        span{
+            color: #999;
+            font-size: 22px;
+        }
+    }
+    .name{
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+    .label{
+        font-size: 14px;
+        color: rgba(255,255,255,0.7);
+    }
+    :global{
+        .ant-slider{
+            width: 300px;
+            padding:0px;
+        }
+        .ant-slider-rail,.ant-slider-track{
+            height: 12px;
+            border-radius: 8px;
+        }
+        .ant-slider-track{
+            background: rgba(86,158,235,0.40);
+        }
+        .ant-slider-handle{
+            width:16px;
+            height: 24px;
+            border:none;
+            background-image: linear-gradient(0deg, #FFFFFF 0%, #569EEB 100%);
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+            border-radius: 8px;
+        }
+    }
+}

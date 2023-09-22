@@ -1,0 +1,70 @@
+.box{
+    position: absolute;
+    // width: 787px;
+    // height: 59px;
+    bottom: 20px;
+    left: 50%;
+    transform:translateX(-50%) ;
+    background: rgba(8, 13, 42, 0.9);
+    border: 1px solid #3C5073;
+    padding: 20px;
+    color: white;
+    .item{
+        display: flex;
+        width: 100%;
+        
+        align-items: center;
+        // justify-content: space-around;
+        margin-bottom: 8px;
+        span{
+            width: 60px;
+        }
+    }
+    
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background: url(./btn2.png) no-repeat;
+        
+        margin-bottom: 8px;
+        span{
+            background: url(./btn2.png) no-repeat;
+            font-size: 16px;
+            line-height: 40px;
+            height: 40px;
+            width: 164px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+
+    .close{
+        position: absolute;
+        right: 10px;
+        top: 8px;
+        cursor: pointer;
+        width: 22px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #64A8C5;
+        font-size: 12px;
+        margin-left: 8px;
+        &:hover{
+          background-color: rgba(58, 134, 243, 0.2)
+        }
+        &:active{
+          color: white;
+          background-color: rgba(58, 134, 243, 0.4)
+        }
+      }
+    :global{
+        .ant-slider{
+            width: 500px;
+        }
+    }
+    
+
+}

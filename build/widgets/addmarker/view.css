@@ -1,0 +1,72 @@
+﻿.mp_head {
+	line-height: 35px;
+	overflow: hidden;
+}
+.mp_head ul {
+    padding: 0;
+}
+.mp_head ul li {
+    padding: 0;
+	float: left;
+    display: inline-block;
+    user-select: none;
+}
+.mp_head ul li i {
+    min-width: 28px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    cursor: not-allowed;
+    font-style: normal;
+}
+.ml10 {
+	margin-left: 10px;
+}
+.mp_head2 {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+.add-btn{
+    width: 104px;
+    height: 32px;
+    background: rgba(33,39,62,0.60);
+    border: 1px solid #3A435A;
+    padding-right: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.list-table{
+    width: 100% !important;
+}
+.list-table, .list-table tr, .list-table thead, .list-table td, .list-table th{
+    border: none !important;
+}
+.list-table tr{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin-bottom: 4px;
+    color: #979FB0;
+    background-color: rgba(38, 53, 79, 0.6);
+}
+.list-table thead tr{
+    background: none;
+}
+.list-table tbody tr{
+    cursor: pointer;
+}
+.list-table tbody tr .fa{
+    color: #64A8C5;
+}
+.list-table tbody tr .fa:hover{
+    color: #64A8C5;
+}
+.fixed-table-container{
+    padding: 0 10px 10px;
+    border: none !important;
+}

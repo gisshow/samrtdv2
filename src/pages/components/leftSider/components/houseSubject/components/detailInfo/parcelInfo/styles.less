@@ -1,0 +1,92 @@
+.box {
+  
+  padding: 8px 8px 16px;
+  // background:rgba(24, 28, 49, 0.9);
+  .scrollBox {
+    height: 180px;
+    overflow-y:overlay;
+    overflow-x: hidden;
+    margin-bottom: 30px;
+    &::-webkit-scrollbar{
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color:transparent;
+      -webkit-border-radius: 2em;
+      -moz-border-radius: 2em;
+      border-radius:2em;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color:rgba(255, 255, 255,0.1);
+      -webkit-border-radius: 2em;
+      -moz-border-radius: 2em;
+      border-radius:2em;
+    }
+  }
+  .content{
+    // width: 360px;
+    font-size: 14px;
+    padding-right: 20px;
+    .group{
+      display: flex;
+      
+    }
+    .item{
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+      .name{
+        color: #979FB0;
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
+      .value{
+        width: 180px;
+        font-size: 16px;
+        color: #8EE0F8;
+        letter-spacing: 0;
+        margin-bottom: 6px;
+      }
+      .full{
+        width: 100%;
+        font-size: 16px;
+        color: #8EE0F8;
+        letter-spacing: 0;
+        margin-bottom: 6px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  
+  }
+
+  .btn{
+    // position: absolute;
+    // bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    span{
+      display: flex;
+      flex:1;
+      align-items: center;
+      justify-content: center;
+      height: 48px;
+      color: #E0E9F6;
+      cursor: pointer;
+      margin-right: 10px;
+      background: rgba(58,134,243,0.60);
+      border: 1px solid #3A86F3;
+      &:hover{
+        background: rgba(58,134,243,0.90);
+      }
+      &:active{
+        background: rgba(58,134,243,0.40);
+        border: 1px solid #E0E9F6;
+      }
+    }
+  }
+  
+}
+

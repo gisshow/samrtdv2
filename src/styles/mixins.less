@@ -1,0 +1,28 @@
+//清除浮动
+.clearfix {
+  display: block;
+  zoom: 1;
+  &:after {
+    content: "";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+//水平垂直居中
+.vm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//单行省略
+.ellipsis(@width) {
+  width: @width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

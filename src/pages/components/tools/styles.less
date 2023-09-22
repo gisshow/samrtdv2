@@ -1,0 +1,90 @@
+.box {
+  position: relative;
+  width: 174px;
+  height: 44px;
+  background: rgba(24, 36, 58, 0.9);
+  border: 1px solid #485282;
+  margin-left: 20px;
+  margin-right: 40px;
+  &:hover {
+    background: rgba(72, 82, 130, 0.9);
+    .icon {
+      color: #e0e9f6;
+    }
+  }
+  &:active {
+    background: rgba(24, 36, 58, 0.9);
+    .icon {
+      color: #e0e9f6;
+    }
+  }
+  .icon {
+    color: #64a8c5;
+  }
+  .btn {
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 16px;
+    color: #e0e9f6;
+    cursor: pointer;
+    span {
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+      &:last-child {
+        font-size: 14px;
+        float: right;
+        margin-top: 2px;
+        color: #8c9cb8;
+      }
+    }
+  }
+}
+
+.box:hover {
+  .pannel {
+    display: block;
+  }
+}
+
+.pannel {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  flex-direction: column;
+  top: 62px;
+  right: 40px;
+  width: 174px;
+  background: rgba(3, 32, 64, 0.6);
+  z-index: 9;
+  .item {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 0 12px;
+    height: 44px;
+    line-height: 44px;
+    cursor: pointer;
+    span {
+      margin-right: 6px;
+    }
+    .icon {
+      color: #64a8c5 !important;
+    }
+    &.select {
+      background: rgb(52, 125, 175, 0.5);
+      .icon {
+        color: #e0e9f6 !important;
+      }
+    }
+    &:hover {
+      background: rgb(52, 125, 175, 0.5);
+      .icon {
+        color: #e0e9f6 !important;
+      }
+    }
+  }
+
+  &.select {
+    display: flex;
+  }
+}

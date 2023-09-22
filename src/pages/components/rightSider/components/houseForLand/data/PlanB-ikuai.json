@@ -1,0 +1,1929 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#0085eb",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": 5,
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095204",
+                    "name": "b1",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.962457, 22.530791, 10.1 ],
+                        [ 113.962515, 22.530851, 10 ],
+                        [ 113.962929, 22.530858, 9 ],
+                        [ 113.962945, 22.530249, 11.4 ],
+                        [ 113.96246, 22.530243, 11 ],
+                        [ 113.96246, 22.530243, 11.1 ],
+                        [ 113.962461, 22.530243, 11.2 ],
+                        [ 113.962457, 22.530791, 10.1 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3bed00",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": 5,
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095209",
+                    "name": "l1",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.962465, 22.530221, 10.9 ],
+                        [ 113.962944, 22.530218, 11.4 ],
+                        [ 113.962944, 22.529688, 11.9 ],
+                        [ 113.962489, 22.529694, 12.4 ],
+                        [ 113.962465, 22.530221, 10.9 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3bed00",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": 5,
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095212",
+                    "name": "l2",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.962484, 22.529563, 11.5 ],
+                        [ 113.962947, 22.529552, 11.2 ],
+                        [ 113.962956, 22.528339, 10.6 ],
+                        [ 113.962858, 22.528341, 10.5 ],
+                        [ 113.962855, 22.529063, 9.1 ],
+                        [ 113.962489, 22.529067, 10.1 ],
+                        [ 113.962484, 22.529563, 11.5 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#1000f5",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095220",
+                    "name": "bb2",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.962492, 22.529035, 11.9 ],
+                        [ 113.962826, 22.529028, 11.5 ],
+                        [ 113.962828, 22.528339, 10.6 ],
+                        [ 113.962545, 22.528346, 10.6 ],
+                        [ 113.962503, 22.528386, 14.2 ],
+                        [ 113.962493, 22.528423, 10.7 ],
+                        [ 113.962492, 22.529035, 11.9 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3bed00",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095255",
+                    "name": "l3",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.962983, 22.527976, 9.5 ],
+                        [ 113.962516, 22.527975, 9.4 ],
+                        [ 113.962455, 22.527933, 9.1 ],
+                        [ 113.962419, 22.527875, 8.8 ],
+                        [ 113.962477, 22.526171, 13.6 ],
+                        [ 113.962514, 22.526128, 8.9 ],
+                        [ 113.96257, 22.526115, 9.2 ],
+                        [ 113.963003, 22.526108, 8.7 ],
+                        [ 113.963003, 22.526108, 8.7 ],
+                        [ 113.962983, 22.527976, 9.5 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3bed00",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095259",
+                    "name": "l4",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.963053, 22.525826, 8.6 ],
+                        [ 113.962637, 22.525829, 8.9 ],
+                        [ 113.962558, 22.525795, 9.3 ],
+                        [ 113.962534, 22.52572, 8.8 ],
+                        [ 113.962521, 22.523488, 7.2 ],
+                        [ 113.962589, 22.523362, 7.1 ],
+                        [ 113.9627, 22.523273, 6.7 ],
+                        [ 113.963017, 22.523274, 6.5 ],
+                        [ 113.963053, 22.525826, 8.6 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#e0302a",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095223",
+                    "name": "r1",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.962958, 22.530871, 8.8 ],
+                        [ 113.962965, 22.529698, 11.1 ],
+                        [ 113.964229, 22.529698, 9.9 ],
+                        [ 113.96427, 22.529733, 10 ],
+                        [ 113.964277, 22.529775, 10 ],
+                        [ 113.964259, 22.530866, 10.7 ],
+                        [ 113.962958, 22.530871, 8.8 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119102224",
+                    "name": "g14",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.96302, 22.528341, 10.5 ],
+                        [ 113.962983, 22.529545, 11.2 ],
+                        [ 113.964203, 22.529538, 11.3 ],
+                        [ 113.964253, 22.529513, 9.8 ],
+                        [ 113.964274, 22.529475, 10.1 ],
+                        [ 113.964283, 22.52944, 15.7 ],
+                        [ 113.964284, 22.528347, 8.8 ],
+                        [ 113.96302, 22.528341, 10.5 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#e0302a",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095246",
+                    "name": "r3",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.964357, 22.528349, 8.4 ],
+                        [ 113.964357, 22.529467, 9.8 ],
+                        [ 113.964378, 22.529518, 10.3 ],
+                        [ 113.964415, 22.529539, 10.1 ],
+                        [ 113.964458, 22.52954, 10.4 ],
+                        [ 113.96571, 22.529536, 14.5 ],
+                        [ 113.965715, 22.528319, 8.5 ],
+                        [ 113.964357, 22.528349, 8.4 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#e0302a",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095242",
+                    "name": "r2",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.96431, 22.530858, 10.1 ],
+                        [ 113.96565, 22.530856, 11.5 ],
+                        [ 113.965678, 22.529689, 12.6 ],
+                        [ 113.964406, 22.529707, 9.2 ],
+                        [ 113.964357, 22.529735, 9.6 ],
+                        [ 113.964331, 22.529789, 9.7 ],
+                        [ 113.96431, 22.530858, 10.1 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095404",
+                    "name": "g15",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.963029, 22.527981, 9.5 ],
+                        [ 113.964262, 22.527993, 8.6 ],
+                        [ 113.964249, 22.526117, 8.3 ],
+                        [ 113.963051, 22.526119, 8.6 ],
+                        [ 113.963029, 22.527981, 9.5 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095403",
+                    "name": "g16",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.964364, 22.527985, 8.2 ],
+                        [ 113.965749, 22.527965, 7.1 ],
+                        [ 113.965759, 22.526117, 9 ],
+                        [ 113.964345, 22.526119, 13.7 ],
+                        [ 113.964364, 22.527985, 8.2 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "2.51",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095501",
+                    "name": "g17",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.964205, 22.525789, 8 ],
+                        [ 113.963104, 22.525818, 8.6 ],
+                        [ 113.96311, 22.524996, 11.7 ],
+                        [ 113.963127, 22.524959, 9.6 ],
+                        [ 113.963149, 22.524938, 8.3 ],
+                        [ 113.963178, 22.524921, 8.3 ],
+                        [ 113.964238, 22.5249, 10.7 ],
+                        [ 113.964246, 22.525773, 7.7 ],
+                        [ 113.964205, 22.525789, 8 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095407",
+                    "name": "g19",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.964233, 22.524808, 8.1 ],
+                        [ 113.963193, 22.524821, 8.3 ],
+                        [ 113.963152, 22.524805, 8.4 ],
+                        [ 113.963129, 22.524788, 8.3 ],
+                        [ 113.963106, 22.524756, 9.1 ],
+                        [ 113.963082, 22.523287, 6.2 ],
+                        [ 113.964231, 22.523283, 8 ],
+                        [ 113.964233, 22.524808, 8.1 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095405",
+                    "name": "g18",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.96434, 22.525778, 7.9 ],
+                        [ 113.965694, 22.52577, 8.5 ],
+                        [ 113.965752, 22.525731, 9.1 ],
+                        [ 113.965775, 22.525686, 8.6 ],
+                        [ 113.965803, 22.524867, 12.8 ],
+                        [ 113.964334, 22.524903, 8.6 ],
+                        [ 113.96434, 22.525778, 7.9 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095406",
+                    "name": "g20",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.964334, 22.524805, 8.2 ],
+                        [ 113.965796, 22.524782, 9.4 ],
+                        [ 113.965803, 22.523298, 4.8 ],
+                        [ 113.96431, 22.523295, 4.7 ],
+                        [ 113.964334, 22.524805, 8.2 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": 3,
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119102231",
+                    "name": "g13",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.966026, 22.529539, 15.4 ],
+                        [ 113.967904, 22.529568, 9 ],
+                        [ 113.967945, 22.529513, 10.1 ],
+                        [ 113.967959, 22.529459, 8.7 ],
+                        [ 113.967998, 22.528312, 7.2 ],
+                        [ 113.966044, 22.528289, 11.1 ],
+                        [ 113.966026, 22.529539, 15.4 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095420",
+                    "name": "g12",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.967942, 22.529736, 9 ],
+                        [ 113.967929, 22.531402, 9.3 ],
+                        [ 113.967164, 22.531692, 10.7 ],
+                        [ 113.967178, 22.529731, 9.1 ],
+                        [ 113.967942, 22.529736, 9 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#e0302a",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095651",
+                    "name": "r4",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.965954, 22.5321, 9.2 ],
+                        [ 113.967063, 22.531714, 9.9 ],
+                        [ 113.967081, 22.530862, 10.8 ],
+                        [ 113.965983, 22.530873, 11.5 ],
+                        [ 113.965954, 22.5321, 9.2 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#e0302a",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095655",
+                    "name": "r5",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.965983, 22.530839, 11.6 ],
+                        [ 113.967081, 22.530834, 10.9 ],
+                        [ 113.967101, 22.529734, 10.8 ],
+                        [ 113.966013, 22.529709, 15.3 ],
+                        [ 113.965983, 22.530839, 11.6 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3bed00",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095658",
+                    "name": "l7",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.968036, 22.531374, 9.2 ],
+                        [ 113.968117, 22.528355, 7.1 ],
+                        [ 113.969141, 22.528355, 10 ],
+                        [ 113.969312, 22.528377, 10.4 ],
+                        [ 113.969347, 22.52842, 8.9 ],
+                        [ 113.969287, 22.53088, 9.5 ],
+                        [ 113.968036, 22.531374, 9.2 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#e0302a",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095349",
+                    "name": "r7",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.966054, 22.526695, 8.1 ],
+                        [ 113.966056, 22.526108, 8.5 ],
+                        [ 113.968052, 22.526085, 10 ],
+                        [ 113.968036, 22.526677, 8.9 ],
+                        [ 113.966054, 22.526695, 8.1 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#e0302a",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095352",
+                    "name": "r6",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.966048, 22.526743, 8.1 ],
+                        [ 113.966046, 22.527988, 8.2 ],
+                        [ 113.968019, 22.527969, 6.5 ],
+                        [ 113.968036, 22.526715, 9.4 ],
+                        [ 113.967983, 22.52672, 8.9 ],
+                        [ 113.966048, 22.526743, 8.1 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3bed00",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "2.94",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095724",
+                    "name": "l6",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.968136, 22.527962, 7.3 ],
+                        [ 113.968184, 22.526096, 8.5 ],
+                        [ 113.969372, 22.526089, 8.3 ],
+                        [ 113.969342, 22.527988, 8 ],
+                        [ 113.968136, 22.527962, 7.3 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#e0302a",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095346",
+                    "name": "r8",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.966063, 22.52489, 9.6 ],
+                        [ 113.966051, 22.525762, 9.2 ],
+                        [ 113.968041, 22.525737, 10.3 ],
+                        [ 113.967896, 22.52489, 10.7 ],
+                        [ 113.966063, 22.52489, 9.6 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#e0302a",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095343",
+                    "name": "r9",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.96607, 22.524741, 9.5 ],
+                        [ 113.967875, 22.524752, 11.6 ],
+                        [ 113.967739, 22.524076, 7.4 ],
+                        [ 113.966076, 22.524068, 7.4 ],
+                        [ 113.96607, 22.524741, 9.5 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#c242a0",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095340",
+                    "name": "p3",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.967734, 22.524015, 8.5 ],
+                        [ 113.967586, 22.523316, 6.1 ],
+                        [ 113.96608, 22.523295, 6.3 ],
+                        [ 113.96607, 22.524011, 7.2 ],
+                        [ 113.967734, 22.524015, 8.5 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3bed00",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095713",
+                    "name": "l5",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.969378, 22.525727, 10.2 ],
+                        [ 113.969431, 22.523341, 5.6 ],
+                        [ 113.967696, 22.523317, 6.7 ],
+                        [ 113.967956, 22.524731, 11.7 ],
+                        [ 113.968055, 22.524734, 11 ],
+                        [ 113.968212, 22.525715, 10.4 ],
+                        [ 113.969378, 22.525727, 10.2 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "2.89",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095730",
+                    "name": "g11",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.969529, 22.527992, 8.5 ],
+                        [ 113.970624, 22.52801, 10.1 ],
+                        [ 113.970652, 22.526821, 7.8 ],
+                        [ 113.969572, 22.526817, 8.3 ],
+                        [ 113.969529, 22.527992, 8.5 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#e0302a",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.10",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095752",
+                    "name": "r11",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.969575, 22.526705, 9.3 ],
+                        [ 113.970652, 22.526728, 6.4 ],
+                        [ 113.970667, 22.526111, 6.1 ],
+                        [ 113.969593, 22.526098, 7.6 ],
+                        [ 113.969575, 22.526705, 9.3 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#e0302a",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095735",
+                    "name": "r22",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.970717, 22.528006, 9.5 ],
+                        [ 113.971823, 22.528031, 9.8 ],
+                        [ 113.971832, 22.526827, 7.7 ],
+                        [ 113.97073, 22.526824, 7.1 ],
+                        [ 113.970717, 22.528006, 9.5 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#e0302a",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095738",
+                    "name": "r24",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.97351, 22.528056, 8.6 ],
+                        [ 113.971899, 22.528033, 8.6 ],
+                        [ 113.971912, 22.526836, 6.7 ],
+                        [ 113.973546, 22.526867, 7.7 ],
+                        [ 113.97351, 22.528056, 8.6 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#e0302a",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095746",
+                    "name": "r21",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.97074, 22.526732, 6.5 ],
+                        [ 113.971837, 22.52673, 7.9 ],
+                        [ 113.971846, 22.526132, 7.3 ],
+                        [ 113.970749, 22.526114, 6.2 ],
+                        [ 113.97074, 22.526732, 6.5 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#e0302a",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095742",
+                    "name": "r23",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.97192, 22.526723, 7.4 ],
+                        [ 113.973548, 22.526758, 7.8 ],
+                        [ 113.973544, 22.526168, 8 ],
+                        [ 113.971919, 22.526138, 7.3 ],
+                        [ 113.97192, 22.526723, 7.4 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#c242a0",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "2.33",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095828",
+                    "name": "p1",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.973947, 22.52929, 8.3 ],
+                        [ 113.974492, 22.529065, 7.6 ],
+                        [ 113.974528, 22.528195, 9.4 ],
+                        [ 113.97384, 22.528172, 8.7 ],
+                        [ 113.973794, 22.529257, 8.7 ],
+                        [ 113.973826, 22.529331, 8.5 ],
+                        [ 113.973896, 22.529315, 8.5 ],
+                        [ 113.973947, 22.52929, 8.3 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095833",
+                    "name": "g1",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.974518, 22.529052, 7.5 ],
+                        [ 113.974563, 22.528161, 7.7 ],
+                        [ 113.973832, 22.528137, 9.2 ],
+                        [ 113.97383, 22.526302, 7.4 ],
+                        [ 113.973853, 22.526246, 7.4 ],
+                        [ 113.973887, 22.52621, 7.4 ],
+                        [ 113.973928, 22.526194, 7.3 ],
+                        [ 113.97734, 22.526212, 10.3 ],
+                        [ 113.977392, 22.526226, 10.4 ],
+                        [ 113.977436, 22.526281, 11 ],
+                        [ 113.977457, 22.526318, 10.5 ],
+                        [ 113.977428, 22.527994, 8.6 ],
+                        [ 113.977403, 22.528077, 8.4 ],
+                        [ 113.977396, 22.528101, 8.3 ],
+                        [ 113.977228, 22.528122, 8.4 ],
+                        [ 113.976822, 22.528233, 8.3 ],
+                        [ 113.976347, 22.528399, 7.5 ],
+                        [ 113.974518, 22.529052, 7.5 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095755",
+                    "name": "g10",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.969648, 22.525681, 8.9 ],
+                        [ 113.970667, 22.525683, 6.5 ],
+                        [ 113.970659, 22.524944, 9.2 ],
+                        [ 113.969667, 22.524951, 11.1 ],
+                        [ 113.969648, 22.525681, 8.9 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#e0302a",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095806",
+                    "name": "r18",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.969688, 22.524797, 10.1 ],
+                        [ 113.970665, 22.52479, 10.2 ],
+                        [ 113.970667, 22.524163, 7 ],
+                        [ 113.969701, 22.524145, 9.8 ],
+                        [ 113.969688, 22.524797, 10.1 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095758",
+                    "name": "g9",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.970797, 22.52571, 6.9 ],
+                        [ 113.971842, 22.525703, 7.3 ],
+                        [ 113.97184, 22.524941, 6.8 ],
+                        [ 113.970788, 22.52494, 9.7 ],
+                        [ 113.970797, 22.52571, 6.9 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095810",
+                    "name": "g8",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.970794, 22.524796, 9.2 ],
+                        [ 113.971854, 22.524785, 7.4 ],
+                        [ 113.971854, 22.524133, 4.7 ],
+                        [ 113.970798, 22.524151, 8.6 ],
+                        [ 113.970794, 22.524796, 9.2 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#c242a0",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095824",
+                    "name": "p2",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.969705, 22.524081, 9.6 ],
+                        [ 113.971845, 22.524078, 3.4 ],
+                        [ 113.971834, 22.523343, 4.9 ],
+                        [ 113.969704, 22.523356, 7.2 ],
+                        [ 113.969705, 22.524081, 9.6 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095820",
+                    "name": "g5",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.971933, 22.524065, 6.2 ],
+                        [ 113.971934, 22.523354, 3.9 ],
+                        [ 113.973622, 22.52339, 4.4 ],
+                        [ 113.973626, 22.524076, 5.4 ],
+                        [ 113.971933, 22.524065, 6.2 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095816",
+                    "name": "g6",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.971923, 22.524143, 6.4 ],
+                        [ 113.971919, 22.524786, 7.3 ],
+                        [ 113.973592, 22.524815, 6.1 ],
+                        [ 113.973604, 22.524149, 5.6 ],
+                        [ 113.971923, 22.524143, 6.4 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095803",
+                    "name": "g7",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.971918, 22.524944, 6.9 ],
+                        [ 113.971933, 22.525715, 7.1 ],
+                        [ 113.973562, 22.525727, 7.1 ],
+                        [ 113.973585, 22.52495, 6.6 ],
+                        [ 113.971918, 22.524944, 6.9 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095839",
+                    "name": "g2",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.975753, 22.525766, 6.6 ],
+                        [ 113.975763, 22.524973, 5 ],
+                        [ 113.973855, 22.524953, 6.2 ],
+                        [ 113.973847, 22.525762, 7 ],
+                        [ 113.974005, 22.525763, 8.2 ],
+                        [ 113.975753, 22.525766, 6.6 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#e0302a",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095843",
+                    "name": "r25",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.975835, 22.525775, 5.4 ],
+                        [ 113.97746, 22.5258, 10.8 ],
+                        [ 113.977477, 22.524976, 11.5 ],
+                        [ 113.975833, 22.52497, 8.7 ],
+                        [ 113.975835, 22.525775, 5.4 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095850",
+                    "name": "g3",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.97386, 22.52483, 8.5 ],
+                        [ 113.975759, 22.524882, 8.4 ],
+                        [ 113.975783, 22.524179, 8.4 ],
+                        [ 113.973874, 22.524151, 4.5 ],
+                        [ 113.97386, 22.52483, 8.5 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#3d3d3d",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095930",
+                    "name": "g4",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.973875, 22.524078, 5.5 ],
+                        [ 113.975777, 22.524096, 8.3 ],
+                        [ 113.975783, 22.5234, 7.2 ],
+                        [ 113.973879, 22.523392, 5.6 ],
+                        [ 113.973875, 22.524078, 5.5 ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "edittype": "extrudedPolygon",
+                "name": "拉伸面",
+                "position": {
+                    "height": true,
+                    "minCount": 3
+                },
+                "style": {
+                    "color": "#e0302a",
+                    "opacity": 0.6,
+                    "outline": true,
+                    "outlineColor": "#ffffff",
+                    "outlineOpacity": 1,
+                    "extrudedHeight": "3.00",
+                    "perPositionHeight": true
+                },
+                "attr": {
+                    "id": "20191119095847",
+                    "name": "r26",
+                    "remark": ""
+                },
+                "type": "polygon"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [ 113.975849, 22.524854, 8.6 ],
+                        [ 113.975884, 22.523423, 7.7 ],
+                        [ 113.977149, 22.523417, 9.7 ],
+                        [ 113.977321, 22.52352, 7.1 ],
+                        [ 113.97745, 22.523702, 9 ],
+                        [ 113.977495, 22.523858, 8.5 ],
+                        [ 113.977466, 22.524862, 11.1 ],
+                        [ 113.975849, 22.524854, 8.6 ]
+                    ]
+                ]
+            }
+        }
+    ]
+}

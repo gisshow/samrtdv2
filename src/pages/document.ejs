@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% let publicPath=process.env.NODE_ENV==='production' ? '/samrtdv2/' : '/' %>
+    <meta charset="utf-8" />
+
+    <!-- 不缓存 -->
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <link href="<%= publicPath %>Cesium/Widgets/widgets.css" rel="stylesheet" />
+    <link href="<%= publicPath %>Mars/mars3d-src.css" rel="stylesheet" />
+    <link href="<%= publicPath %>CesiumPlugins/navigation/viewerCesiumNavigationMixin.css" rel="stylesheet" />
+    <link href="<%= publicPath %>sdk/third/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<%= publicPath %>sdk/third/css/essentials.css" rel="stylesheet" />
+    <link href="<%= publicPath %>sdk/third/css/layout-dark.css" rel="stylesheet" />
+    <link href="<%= publicPath %>sdk/third/css/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
+    <link href="<%= publicPath %>sdk/third/css/style.css" rel="stylesheet" />
+    <link href="<%= publicPath %>lib/pop/main.css" rel="stylesheet" />
+    <script>
+      var userAgent = navigator.userAgent
+      console.log(navigator);
+      if ((userAgent.indexOf('Chrome') === -1 || userAgent.indexOf('Edge') > -1) && userAgent.indexOf('Firefox') === -1) {
+        location.href = '/sdk/download/'
+      }
+    </script>
+    <title></title>
+</head>
+
+<body class="dark">
+  <div id="root"></div>
+  <div id="modal-root"></div>
+  <script src="<%= publicPath %>lib/video/kurento-utils.js"></script>
+  <script src="<%= publicPath %>lib/turf/turf.js"></script>
+  <script src="<%= publicPath %>Cesium/Cesium.js"></script>
+  <script src="<%= publicPath %>CesiumPlugins/gltf/fixGltf.js"></script>
+  <script src="<%= publicPath %>CesiumPlugins/navigation/viewerCesiumNavigationMixin.js"></script>
+  <script src="<%= publicPath %>JQuery/jquery-3.4.1.min.js"></script>
+  <script src="<%= publicPath %>Mars/mars3d-src.js"></script>
+
+
+  <!-- <script src="<%= publicPath %>Mars/heatmap.js"></script>
+  <script src="<%= publicPath %>Mars/mars3d-heatmap.js"></script> -->
+
+
+  <!-- 热力图依赖 -->
+  <script src="<%= publicPath %>CesiumPlugins/heatmap/heatmap.min.js"></script>
+  <script src="<%= publicPath %>CesiumPlugins/heatmap/HeatmapImageryProvider.js"></script>
+  <script src="<%= publicPath %>CesiumPlugins/heatmap/CesiumHeatmap.js"></script>
+
+  <!-- cesium扩展插件 -->
+  <!-- <script src="<%= publicPath %>CesiumPlugins/pinganCesium.min.js"></script> -->
+  <!-- 压平 -->
+  <script src="<%= publicPath %>CesiumPlugins/Cesium.PolygonTexture.min.js"></script>
+
+  <!-- <script src="<%= publicPath %>Mars/mars3d-src.js"></script> -->
+  <script type="text/javascript" src="<%= publicPath %>lib/include-lib.js" libpath="<%= publicPath %>lib/"
+    include="font-awesome,web-icons,layer,haoutil,nprogress,toastr,turf,echarts,vtgl"></script>
+  <script src="<%= publicPath %>lib/pop/main.js"></script>
+
+
+
+
+
+  <script>
+    window.publicPath = "<%= publicPath %>";
+    window.NProgress=NProgress
+    window.echarts=echarts
+    window.vtgl=vtgl;
+    console.log( window.vtgl)
+
+    // if ('serviceWorker' in navigator) {
+    //   if(location.hostname.indexOf("localhost")===-1 || localStorage.useWorkBox){
+    //     window.addEventListener('load', () => {
+    //       navigator.serviceWorker.register('./sw.js')
+    //               .then(registration => {
+    //                 console.log(`Service Worker registered! Scope: ${registration.scope}`);
+    //               })
+    //               .catch(err => {
+    //                 console.log(`Service Worker registration failed: ${err}`);
+    //               });
+    //     });
+    //   }else{
+    //     navigator.serviceWorker.getRegistration().then(a=>{
+    //       if (a) {
+    //         a.unregister()
+    //       }
+    //     })
+    //   }
+    // }
+  </script>
+  <div id="loading">
+ 
+  </div>
+
+  <style>
+    #loading {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: fixed;
+      /*display: block;*/
+      opacity: 0.7;
+      background-color: #fff;
+      z-index: 99999999999;
+      text-align: center;
+      display: none;
+    }
+
+    #loading-image {
+      position: absolute;
+      top: 30%;
+      left: 30%;
+      z-index: 100;
+    }
+
+    .cesium-performanceDisplay-defaultContainer {
+      display: none;
+    }
+  </style>
+</body>
+
+</html>

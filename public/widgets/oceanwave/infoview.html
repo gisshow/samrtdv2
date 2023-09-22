@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html class="no-js css-menubar" lang="zh-cn">
+
+<head>
+    <title>弹窗子页面</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 移动设备 viewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="author" content="火星科技 http://cesium.marsgis.cn ">
+    <!-- 360浏览器默认使用Webkit内核 -->
+    <meta name="renderer" content="webkit">
+    <!-- Chrome浏览器添加桌面快捷方式（安卓） -->
+    <link rel="icon" type="image/png" href="../../img/favicon/favicon.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Safari浏览器添加到主屏幕（IOS） -->
+    <link rel="icon" sizes="192x192" href="img/favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="火星科技MarsGIS">
+    <!-- Win8标题栏及ICON图标 -->
+    <link rel="apple-touch-icon-precomposed" href="../../img/favicon/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="../../img/favicon/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#62a8ea">
+
+    <!-- 第3方lib引入 -->
+    <script type="text/javascript" src="../../lib/include-lib.js?time=20190418" libpath="../../lib/" include="jquery,echarts,font-awesome,bootstrap,admui-frame"></script>
+
+  <link href="../../sdk/third/css/widget-win.css" rel="stylesheet" />
+    <link href="view.css?time=20190418" rel="stylesheet" />
+    <link href="../../iconfont/iconfont.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div class="container">
+
+    <div  style="position: absolute;left :5px;top:30px;width: 380px;height: 30px;" >
+
+        <span  style="margin-left: 8px; color: white;"  id="zhandianname">    </span>
+        <span  style="float: right;margin-right: 20px;color: white;"  id="alarmtime">  </span>
+    </div>
+
+
+
+
+    <div id="echartdiv2" style="position: absolute;left :5px;top:60px;width: 380px;height: 233px;"   >
+
+    </div>
+
+
+</div>
+
+
+<!--页面js-->
+<script src="view.js?time=20190418"></script>
+</body>
+
+<script type="text/javascript">
+
+
+
+    var thisWidget;
+
+    var myChart;
+
+    //当前页面业务
+    function initWidgetView(_thisWidget) {
+        thisWidget = _thisWidget;
+        myChart = echarts.init(document.getElementById('echartdiv2'));
+        //  this.loadcharts();
+    }
+
+    Date.prototype.Format = function (fmt) { //author: meizz
+        var o = {
+            "M+": this.getMonth() + 1, //月份
+            "d+": this.getDate(), //日
+            "h+": this.getHours(), //小时
+            "m+": this.getMinutes(), //分
+            "s+": this.getSeconds(), //秒
+            "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+            "S": this.getMilliseconds() //毫秒
+        };
+        if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for (var k in o)
+            if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        return fmt;
+    }
+    function loadcharts(data,timeconfig) {
+
+        var starttime=timeconfig.sd+" "+timeconfig.sh;
+        var endtime=timeconfig.ed+" "+timeconfig.eh;
+
+        // var date=new Date(timeconfig.sd);
+        // date.setHours(timeconfig.sh-48);
+        // var date2=new Date(timeconfig.ed);
+        // date2.setHours(timeconfig.eh-48);
+        
+        var date=new Date(timeconfig.sd);
+        date.setHours(timeconfig.sh);
+        var date2=new Date(timeconfig.ed);
+        date2.setHours(timeconfig.eh);
+
+        // console.log("date:"+date);
+        // console.log("date2:"+date2);
+
+        $.getJSON("/OceanServer/waveserver?op=3&date="+date.Format('yyyy-MM-dd hh')+"&edate="+date2.Format('yyyy-MM-dd hh')+"&id="+data.id, function (result) {
+
+            var id=data.id;
+            console.log('get site info:',id,starttime,endtime);
+
+
+            var v=data.v.toFixed(2);
+            $("#zhandianname").html("站点"+data.id+"预报时间段统计");
+            $("#alarmtime").html("当前浪高："+v+"m");
+
+
+
+            var d=[];
+            var time=[];
+            var hd=[];
+            var yd=[];
+            var od=[];
+            var rd=[];
+            var ad=[];
+
+            var max=0;
+            var maxtime='';
+           
+            for(let i=0; i < result.length ; i++){
+                var p=result[i];
+                if(p.v > max){
+                    maxtime=p.time;
+                }
+                max=Math.max(p.v,max);
+
+                d.push(p.v);
+                time.push(p.time);
+                hd.push(2.5);
+                yd.push(1);
+                od.push(1);
+                rd.push(1.5);
+                ad.push(0.6);
+            }
+
+
+
+            var colors=[ '#ec4040', '#c67d0c','#c9cb0e','#317ddd'].reverse();
+
+
+            var option = {
+                title: [{
+                    textStyle:{
+                        color:'white',
+                        fontSize:12,
+                    },
+                    text: data.time,
+                    left: '10'
+                },{
+                    textStyle:{
+                        color:'white',
+                        fontSize:12,
+                    },
+                    subtext:  '浪高最大值:'+max+"m ("+maxtime+")",
+                    right:'10',
+
+                }] ,
+                tooltip: {
+                    trigger: 'axis',
+                    formatter:function (a,b) {
+                        var s=a[a.length-1];
+                        var time=s.axisValue;
+                        var value=s.value;
+                        return time+"<br/> 浪高: "+value.toFixed(2)+"m";
+
+                    }
+
+                },
+                color:colors,
+                legend: {
+                    data: ['蓝色', '黄色', '橙色', '红色'],
+
+                    textStyle: {
+                        fontSize: 12,
+                        color: colors[0],
+                    },
+                    top:'25',
+                    // left : '50%'
+                },
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    splitLine: {
+                        show: false
+                    },
+                    axisLine: {
+                        show: true,
+                        lineStyle: {
+                            color:'blue',
+                            width: 1
+                        }
+                    },
+                    axisTick: {
+                        show: true
+
+                    },
+                    axisLabel: {
+                        textStyle:{
+                            color:'white',
+                            fontSize:14,
+                        },
+                        show:true
+                    },
+                    data: time
+                },
+                grid: {
+                    left: '20',
+                    right: '20',
+                    bottom: '20',
+                    containLabel: true
+                },
+
+                yAxis: {
+                    type: 'value',
+
+                    name:'浪高(m)',
+                    nameTextStyle:{
+                        color:'white',
+                    },
+                    splitLine: {
+                        show: false
+                    },
+                    axisLine: {
+                        show: true,
+                        lineStyle: {
+                            color:'blue',
+                            width: 1
+                        }
+                    },
+                    axisTick: {
+                        show:true,
+                    },
+                    axisLabel: {
+                        fontWeight: "bold",
+                        textStyle:{
+                            color:'white',
+                            fontSize:14,
+                        },
+                        rotate:40,
+                        showMaxLabel: true,
+                        show:true
+                    }
+                },
+                series: [
+                //     {
+                //     type: 'line',
+                //     name:'蓝色',
+                //     showSymbol: false,
+                //     data: hd,
+                //     stack: 'all',
+                //     lineStyle:{
+                //         width:1,
+                //         color:colors[0]
+                //     }
+                // },{
+
+                //     type: 'line',
+                //     stack: 'all',
+                //     name:'黄色',
+                //     data: yd,
+                //     areaStyle:{
+                //         color:colors[0],
+                //     },
+                //     showSymbol: false,
+                //     lineStyle:{
+                //         color:colors[1],
+                //         width:1,
+                //     }
+                // },{
+                //     type: 'line',
+                //     name:'橙色',
+                //     stack: 'all',
+                //     data: od,
+                //     showSymbol: false,
+                //     areaStyle:{
+                //         color:colors[1],
+                //     },
+
+                //     lineStyle:{
+                //         color:colors[2],
+                //         width:1,
+                //     }
+                // },{
+                //     type: 'line',
+                //     stack: 'all',
+                //     name:'红色',
+                //     showSymbol: false,
+                //     data: rd,
+                //     areaStyle:{
+                //         color:colors[2],
+                //     },
+
+                //     lineStyle:{
+                //         color:colors[3],
+                //         width:1,
+                //     }
+                // },{
+                //     type: 'line',
+                //     stack: 'all',
+
+                //     data: ad,
+                //     showSymbol: false,
+                //     areaStyle:{
+                //         color:colors[3],
+                //     },
+
+                //     lineStyle:{
+                //         width:0,
+                //     }
+                // },
+                {
+                    type: 'line',
+
+                    data: d,
+                    symbolSize: 4,
+                    lineStyle:{
+                        width:1,
+                        color:'#8EE0F8'
+                    }
+                }]
+            };
+
+
+            myChart.setOption(option);
+
+
+        });
+
+
+    }
+
+
+
+</script>
+
+</html>

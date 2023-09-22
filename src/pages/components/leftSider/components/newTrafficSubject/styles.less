@@ -1,0 +1,199 @@
+
+  
+  .newTabs{
+    position: absolute;
+    width: 400px;
+    height: 290px;
+    top: 130px;
+    left: 20px;
+    background-color:rgba(8, 13 ,42,0.9);
+    :global {
+      .ant-tabs-tab{
+        color: #E0E9F6;
+      }
+      .ant-radio-wrapper{
+        color: #E0E9F6;
+      }
+    }
+    .tabsBox{
+      padding: 16px;
+    }
+  }
+
+
+  .date{
+    width: 400px;
+    height: 48px;
+    background-color:rgba(8, 13 ,42,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .line{
+      margin: 0 6px;
+    }
+    :global {
+      .ant-calendar-picker{
+        min-width:180px !important;
+        width: 180px;
+      }
+      .ant-calendar-input-wrap{
+        display: none;
+      }
+      .ant-calendar{
+        background-color:rgba(8, 13 ,42,0.9);
+      }
+      .ant-calendar-date{
+        color:rbga(255,255,255,1);
+      }
+      .ant-calendar-time-picker{
+        background-color:rgba(8, 13 ,42,0.9);
+      }
+      .ant-calendar-picker-input{
+        color: #E0E9F6;
+        background-color: rgba(63, 72, 84, 0.7) !important;
+      }
+      .ant-calendar-picker-icon{
+        color:rbga(255,255,255,1);
+      }
+      
+    }
+  }
+  .ant-calendar-panel{
+    display: none;
+  }
+  .stat{
+    transition: all 0.5s;
+    width: 400px;
+    padding:0 24px;
+    // bottom: 30px;
+    // background-color:rgba(8, 13 ,42,0.9);
+    // background-image: url("./img/point-bg.png");
+
+    .info{
+      margin-bottom: 20px;
+      // span{
+      //   display: block;
+      // }
+      .title{
+        font-size: 16px;
+        color: #E0E9F6;
+        letter-spacing: 0;
+      }
+      .sum{
+        font-size: 40px;
+        color: #8EE0F8;
+        letter-spacing: 0;
+        font-family: font-number;
+        margin-right: 20px;
+      }
+      .sum[data-text]::before {
+        content: attr(data-text);
+        background: #8EE0F8;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      .subtitle{
+        font-size: 14px;
+        color: #979FB0;
+      }
+      .subtile{
+        font-size: 14px;
+        color: #E0E9F6;
+      }
+    }
+    .time{
+      font-size: 12px;
+      color: #7B9EB0;
+      letter-spacing: 0;
+      line-height: 18px;
+      text-align: center;
+      margin: 20px;
+    }
+    .hideBtn{
+      position: absolute;
+      right: -34px;
+      height:79px;
+      padding:27px;
+      cursor: pointer;
+      bottom: 15px;
+      background: data-uri("./img/unfold_default@1x.png") no-repeat center center;
+    }
+    .text{
+      width: 14px;
+      height: 111px;
+      position: absolute;
+      cursor: pointer;
+      right: -29px;
+      padding: 27px 12px 23px 27px;
+      bottom: 15px;
+      font-size: 12px;
+      writing-mode: tb-rl;
+      background: data-uri("./img/unfold.png") no-repeat center center;
+  
+    }
+    &.bgShow {
+      left: 0;
+    }
+    &.bgHide{
+      left: -424px;
+    }
+  }
+
+.tooltip{
+    color: #979FB0;
+    font-size: 14px;
+    .item{
+        margin-bottom: 6px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.legend{
+  position: absolute;
+  left:24px;
+  bottom: 40px;
+  background: rgba(24, 36, 58, 0.9);
+  padding: 20px;
+  display: flex;
+  .colorbox{
+    display: inline-block;
+    width: 40px;
+    height: 130px;
+    background-image: linear-gradient(180deg, #ca1821 0%, #21c53c 100%);
+    margin-right: 10px;
+  }
+  .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #979FB0;
+    font-weight: 400;
+  }
+}
+
+.switch{
+  position:absolute;
+  z-index:2;
+  right:20%;
+  top:20px;
+  padding:10px 0px;
+  background-color:rgba(38,44,75,1);
+  color:rgba(224, 233, 246,1);
+  span{
+      padding:0px 10px; 
+  }
+}
+
+:global {
+  .ant-calendar-picker-container{
+    .ant-calendar{
+      .ant-calendar-panel{
+        .ant-calendar-input-wrap{
+          display: none;
+        }
+      }
+    }
+  }
+}

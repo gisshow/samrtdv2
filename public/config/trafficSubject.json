@@ -1,0 +1,14 @@
+{
+    "trafficSubject": {
+        "name":"交通主体",
+        "url": "/geoserver/JYZT/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=JYZT%3Adlzxx_pl_50000_4490&outputFormat=application%2Fjson",
+        "key":"trafficSubject",
+        "parameters":{
+            "service": "WFS",
+            "request": "GetFeature",
+            "typeName": "JYZT:dlzxx_pl_50000_4490",
+            "version": "1.0.0",
+            "outputFormat": "application/json"
+        }
+    }
+}

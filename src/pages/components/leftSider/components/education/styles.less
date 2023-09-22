@@ -1,0 +1,86 @@
+.board{
+    position: absolute;
+    margin: 136px 24px 24px 24px;
+    transition: all 0.5s;
+    width: 400px;
+    top: 0;
+    left: 0;
+    // bottom: 30px;
+    background-color:rgba(8, 13 ,42,0.9);
+    background-image: url("./img/point-bg.png");
+    &.top{
+      top:56px;
+    }
+    &.botton{
+      bottom: 30px;
+    }
+    .info{
+      margin-bottom: 20px;
+      // span{
+      //   display: block;
+      // }
+      .title{
+        font-size: 16px;
+        color: #E0E9F6;
+        letter-spacing: 0;
+      }
+      .sum{
+        font-size: 40px;
+        color: #8EE0F8;
+        letter-spacing: 0;
+        font-family: font-number;
+        margin-right: 20px;
+      }
+      .sum[data-text]::before {
+        content: attr(data-text);
+        background: #8EE0F8;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      .subtitle{
+        font-size: 14px;
+        color: #979FB0;
+      }
+    }
+    .time{
+      font-size: 12px;
+      color: #7B9EB0;
+      letter-spacing: 0;
+      line-height: 18px;
+      text-align: center;
+      margin: 20px;
+    }
+    .hideBtn{
+      position: absolute;
+      right: -34px;
+      height:79px;
+      padding:27px;
+      cursor: pointer;
+      bottom: 15px;
+      background: data-uri("./img/unfold_default@1x.png") no-repeat center center;
+    }
+    .text{
+      width: 14px;
+      height: 111px;
+      position: absolute;
+      cursor: pointer;
+      right: -29px;
+      padding: 27px 12px 23px 27px;
+      bottom: 15px;
+      font-size: 12px;
+      writing-mode: tb-rl;
+      background: data-uri("./img/unfold.png") no-repeat center center;
+  
+    }
+    &.bgShow {
+      left: 0;
+    }
+    &.bgHide{
+      left: -424px;
+    }
+  }
+
+
+
+
+

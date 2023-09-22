@@ -1,0 +1,31 @@
+.box{
+    position: absolute;
+    background-size: cover;
+    width: 787px;
+    // height: 59px;
+    bottom: 30px;
+    left: 50%;
+    transform:translateX(-50%) ;
+    display: flex;
+    .item{
+        background: rgba(36,42,70,0.60);
+        border: 1px solid #0B92ED;
+        box-shadow: 0 0 10px 2px rgba(11,146,237,0.50);
+        width: 80px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 10px;
+        span{
+            font-size: 30px;
+        }
+        &.active{
+            background: #070C2D;
+            border: 2px solid #0B92ED;
+        }
+    }
+
+
+}
