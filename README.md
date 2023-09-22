@@ -183,3 +183,16 @@ http {
     }
 }
 ```
+
+
+git add .
+git commit -m 'add'
+git push
+git subtree push --prefix=build origin gh-pages
+
+
+
+
+
+
+
